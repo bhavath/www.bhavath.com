@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+  .container {
+    max-width: 640px;
+    width: 100%; } }
+@media (min-width: 768px) {
+  .container {
+    width: 738px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 962px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+@media (min-width: 1366px) {
+  .container {
+    width: 1266px; } }
+@media (min-width: 1600px) {
+  .container {
+    width: 1322px; } }
+@media (min-width: 1920px) {
+  .container {
+    width: 1366px; } }
+
+/*# sourceMappingURL=container.css.map */

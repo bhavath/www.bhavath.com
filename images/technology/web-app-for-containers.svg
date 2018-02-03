@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#006FAF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#006FAF;stroke-width:1.65;stroke-miterlimit:10;}
+</style>
+<title>health-checks</title>
+<g id="text">
+</g>
+<g>
+	<circle class="st0" cx="37" cy="37" r="36"/>
+	<g>
+		<polyline class="st0" points="52,37 52,46 22,46 22,25 40,25 		"/>
+		<rect x="33" y="46" class="st0" width="8" height="6"/>
+		<polygon class="st0" points="44,55 30,55 31,52 43,52 		"/>
+		<line class="st0" x1="22" y1="40" x2="52" y2="40"/>
+		<line class="st0" x1="27" y1="55" x2="47" y2="55"/>
+		<g id="_36-Smartphone">
+			<path class="st1" d="M44.8,19h5.7c0.6,0,1.1,0.5,1.1,1.1v12.6c0,0.6-0.5,1.1-1.1,1.1h-5.7c-0.6,0-1.1-0.5-1.1-1.1V20.2
+				C43.7,19.6,44.2,19,44.8,19z"/>
+			<line class="st1" x1="43.7" y1="21.9" x2="51.7" y2="21.9"/>
+			<line class="st1" x1="43.7" y1="31.1" x2="51.7" y2="31.1"/>
+		</g>
+	</g>
+</g>
+</svg>

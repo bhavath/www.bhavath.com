@@ -1,0 +1,24 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #006faf;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #006faf;
+      }
+    </style>
+  </defs>
+  <title>Deployment Automation &amp;amp; Orchestration</title>
+  <circle class="cls-1" cx="37" cy="37" r="36"/>
+  <g>
+    <path class="cls-2" d="M47.15,52.56H26.85V21.44H47.15Zm.68-32.47H26.18a.68.68,0,0,0-.68.68V53.24a.68.68,0,0,0,.68.68H47.82a.68.68,0,0,0,.68-.68V20.76A.68.68,0,0,0,47.82,20.09Z"/>
+    <path class="cls-2" d="M37,36.32a6.09,6.09,0,1,1-6.09,6.09A6.09,6.09,0,0,1,37,36.32Zm0,13.53a7.44,7.44,0,1,0-7.44-7.44A7.45,7.45,0,0,0,37,49.85Z"/>
+    <path class="cls-2" d="M37,25.5a2,2,0,1,1-2,2A2,2,0,0,1,37,25.5Zm0,5.41a3.38,3.38,0,1,0-3.38-3.38A3.39,3.39,0,0,0,37,30.91Z"/>
+    <circle class="cls-2" cx="37" cy="42.41" r="1.35"/>
+  </g>
+</svg>

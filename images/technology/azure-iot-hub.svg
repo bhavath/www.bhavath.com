@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#006FAF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#006FAF;}
+	.st2{fill:none;stroke:#006FAF;stroke-width:1.5;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#006FAF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st4{fill:#006FAF;stroke:#006FAF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#006FAF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#006FAF;stroke-miterlimit:10;}
+	.st7{fill:#006FAF;stroke:#006FAF;stroke-width:0.25;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#006FAF;stroke-width:0.25;stroke-miterlimit:10;}
+</style>
+<g id="iot-connected-platform-deployment">
+	<g id="Layer_13">
+	</g>
+</g>
+<g id="core-iot-services">
+</g>
+<g id="Application-and-business-logic">
+</g>
+<g id="Device-connectivity-and-_security">
+</g>
+<g id="Device-management">
+</g>
+<g id="User-management">
+</g>
+<g id="Connected-products_1_">
+</g>
+<g id="Connected-systems_1_">
+</g>
+<g id="Data-driven-connected-business_1_">
+</g>
+<g id="Azure-iot-hub_1_">
+	<circle class="st0" cx="37.1" cy="37" r="36"/>
+	<g>
+		<path class="st1" d="M40.6,36.5c0,0.3-0.2,0.5-0.5,0.5h-3.9c-0.3,0-0.5-0.2-0.5-0.5v-2.9c0-0.3,0.2-0.5,0.5-0.5h3.9
+			c0.3,0,0.5,0.2,0.5,0.5V36.5z"/>
+		<path class="st1" d="M47.6,39.5c0,0.3-0.2,0.5-0.5,0.5h-3.9c-0.3,0-0.5-0.2-0.5-0.5v-2.9c0-0.3,0.2-0.5,0.5-0.5h3.9
+			c0.3,0,0.5,0.2,0.5,0.5V39.5z"/>
+		<path class="st1" d="M40.6,42.5c0,0.3-0.2,0.5-0.5,0.5h-3.9c-0.3,0-0.5-0.2-0.5-0.5v-2.9c0-0.3,0.2-0.5,0.5-0.5h3.9
+			c0.3,0,0.5,0.2,0.5,0.5V42.5z"/>
+		<path class="st1" d="M33.6,33.5c0,0.3-0.2,0.5-0.5,0.5h-4c-0.3,0-0.5-0.2-0.5-0.5v-3c0-0.3,0.2-0.5,0.5-0.5H33
+			c0.4,0,0.6,0.2,0.6,0.5V33.5z"/>
+		<path class="st1" d="M51.1,23L51.1,23h-3H26h-1.9h-1c-0.3,0-0.5,0.2-0.5,0.5v6c0,0.3,0.2,0.5,0.5,0.5h3c0.3,0,0.5-0.2,0.5-0.5V27
+			h21v2.5c0,0.3,0.2,0.5,0.6,0.5h2.9c0.3,0,0.5-0.2,0.5-0.5v-3v-3C51.6,23.2,51.4,23,51.1,23z"/>
+		<path class="st1" d="M51.1,46.1h-2.9c-0.3,0-0.5,0.2-0.5,0.5V49H26.6v-2.5c0-0.3-0.2-0.5-0.6-0.5h-2.9c-0.3,0-0.5,0.2-0.5,0.6v5.9
+			c0,0.3,0.2,0.5,0.5,0.5h1h2h22.1H51h0.1c0.3,0,0.5-0.2,0.5-0.5v-5.9C51.6,46.3,51.4,46.1,51.1,46.1z"/>
+		<path class="st1" d="M33.6,39.5c0,0.3-0.2,0.5-0.5,0.5h-4c-0.3,0-0.5-0.2-0.5-0.5v-3c0-0.3,0.2-0.5,0.5-0.5H33
+			c0.4,0,0.6,0.2,0.6,0.5V39.5z"/>
+		<path class="st1" d="M33.6,45.5c0,0.3-0.2,0.5-0.5,0.5h-4c-0.3,0-0.5-0.2-0.5-0.5v-3c0-0.3,0.2-0.5,0.5-0.5H33
+			c0.4,0,0.6,0.2,0.6,0.5V45.5z"/>
+	</g>
+</g>
+<g id="Expertise-and-experience_1_">
+</g>
+<g id="Domain-and-_subject">
+</g>
+</svg>

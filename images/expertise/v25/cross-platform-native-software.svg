@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#006FAF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#006FAF;stroke-width:1.75;stroke-miterlimit:10;}
+	.st2{fill:#006FAF;}
+</style>
+<title>python</title>
+<g>
+	<circle class="st0" cx="37" cy="37" r="36"/>
+	<g>
+		<path id="Rectangle-3" class="st1" d="M22.7,42.8V24.5c0-0.7,0.5-1.2,1.2-1.2h24.8c0.7,0,1.2,0.5,1.2,1.2v2.9"/>
+		<polyline id="Rectangle-3-Copy" class="st1" points="40.6,39.7 25.9,39.7 25.9,26.4 46.7,26.4 46.7,28 		"/>
+		<path id="Rectangle-5" class="st1" d="M41,45.7H19.2c-0.7,0-1.2-0.5-1.2-1.2v-1.8h23"/>
+		<path class="st1" d="M43.4,31.2v18.3c0,0.7,0.5,1.2,1.2,1.2h8.3c0.7,0,1.2-0.5,1.2-1.2V31.2c0-0.7-0.5-1.2-1.2-1.2h-8.3
+			C43.9,30,43.4,30.6,43.4,31.2z"/>
+		<path id="Line" class="st1" d="M43.1,46.3H54"/>
+		<path id="Line-Copy" class="st1" d="M43.7,32.7h9.9"/>
+		<circle id="Oval" class="st2" cx="48.7" cy="48.5" r="1.1"/>
+	</g>
+</g>
+</svg>

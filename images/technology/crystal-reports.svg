@@ -1,0 +1,24 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #006faf;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #006faf;
+      }
+    </style>
+  </defs>
+  <title>crystal-reports</title>
+  <circle class="cls-1" cx="37" cy="37" r="36"/>
+  <g>
+    <circle class="cls-2" cx="26.33" cy="37.07" r="5.83"/>
+    <circle class="cls-2" cx="37.15" cy="26.38" r="5.83"/>
+    <circle class="cls-2" cx="47.67" cy="37.07" r="5.83"/>
+    <circle class="cls-2" cx="37.15" cy="47.62" r="5.83"/>
+  </g>
+</svg>

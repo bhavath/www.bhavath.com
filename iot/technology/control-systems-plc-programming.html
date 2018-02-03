@@ -1,0 +1,1553 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from www.Bhavath.com/iot/technology/control-systems-plc-programming.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Jan 2018 12:57:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<title>Bhavath: IoT Control Systems Development | Industrial IoT Services and Solutions</title>
+	<meta name="description" content="Bhavath helps manufacturing companies and technology providers bridge the gap between legacy control systems technology and IoT through control systems services and solutions including data acquisition for IoT, Legacy to IoT Connectivity, Industrial IoT to Cloud Connectivity and Next-gen PLC programming">
+	<meta name="keywords" content="plc consulting company, plc programming companies, plc programming consulting, plc programming services, control systems software services, industrial iot solutions, smart manufacturing iot, industrial iot services, remote plc programming">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../../css/bootstrap/3.3.7/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="../../css/font-awesome/4.6.3/css/font-awesome.css" type="text/css" />
+<!--<link rel="stylesheet"  href="https://www.Bhavath.com/css/lightslider.css"/>-->
+
+<link rel="stylesheet" type="text/css" href="../../css/style-min.css">
+<link rel="stylesheet" type="text/css" href="../../css/container.css">
+<link rel="stylesheet" type="text/css" href="../../css/tabs.css">
+<link rel="stylesheet" type="text/css" href="../../css/animate.css">
+<link rel="stylesheet" type="text/css" href="../../css/css-animation.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" type="text/javascript"></script>
+<!--<script src="https://www.Bhavath.com/js/lightslider.js"></script> -->
+<script src="../../js/bootstrap/3.3.7/bootstrap.min.js"></script>
+<script src="../../js/custom.js"></script>
+<script src="../../js/tabs.js"></script>
+<script src="../../js/wow.js"></script>
+<script src="../../js/touchswipe.min.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico" />
+<style type="text/css">#content #LazyLoadBox h5,#content #LazyLoadBox h5.title{font-weight: 400 !important;}#NewsOuter #content #LazyLoadBox h5,#NewsOuter #content #LazyLoadBox h5.title{ margin-bottom: 12px; } 
+	@-webkit-keyframes h{0%{-webkit-transform:translate(0);transform:translate(0)}50%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{-webkit-transform:translate(0);transform:translate(0)}}
+	@keyframes h{0%{-webkit-transform:translate(0);transform:translate(0)}50%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{-webkit-transform:translate(0);transform:translate(0)}}
+</style>
+<!--Start Google Analytics Code-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-2507838-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script>
+function myOnLoad() {
+window.parent.$('body').css('overflow', 'hidden');
+}
+	
+</script>
+</head><body class="V2">
+<!--
+<div class="stickyButton">
+	<div class="buttonBox">
+		<a id="stickyContactButton" data-rel="mySalesForm">Contact Sales</a>
+	</div>
+</div>	
+-->
+
+<div class="myContactBox">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="myBox">
+					<div class="myHeight" data-rel="myContactBox">
+						<a class="CloseMenu"><img src="../../images/close.png" alt="Close" title="Close" /></a>
+						<div class="myIconTitle">
+							<img class="myIcon" src="../../images/contact/contact.svg" alt="Bhavath Contact Options" />
+							<h2>Bhavath Contact Options</h2>
+						</div>
+						
+						<p class="MB20">Select the link below that best matches your interest.</p>
+						<div class="actionBox" id="salesClick" data-rel="mySalesForm">
+							<div>
+								<img class="myIcon" src="../../images/contact/blank.png" alt="Sales" /><span>Sales<i class="addArrow"></i></span>
+							</div>
+						</div>
+						<a href="../../company/about/careers-usae408.html?p=apply" title="Careers">
+							<div class="actionBox" id="careerClick">
+								<div>
+									<img class="myIcon" src="../../images/contact/blank.png" alt="Careers" />
+									<span>Careers<i class="addArrow"></i></span>
+								</div>
+							</div>
+						</a>
+						<a href="https://portal.Bhavath.com/" target="_blank" title="Customer Login">
+						<div class="actionBox" id="loginClick">
+							<div>
+								<img class="myIcon" src="../../images/contact/blank.png" alt="Login" />
+								<span>Login<i class="addArrow"></i></span>
+							</div>
+						</div>
+						</a>
+
+						<div class="actionBox" id="moreInfoClick" data-rel="myMoreInfo">
+							<div>
+								<img class="myIcon" src="../../images/contact/blank.png" alt="More Info" />
+								<span>More Info<i class="addArrow"></i></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mySalesForm">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="myBox">
+					<div class="myHeight">
+						<a class="backMenu" style="float:left;"><img src="../../images/back-arrow.png" alt="Back" title="Back" /></a> 
+						<a class="CloseMenu"><img src="../../images/close.png" alt="Close" title="Close" /></a> 
+						<div class="myIconTitle">
+							<img class="myIcon" src="../../images/contact/sales.svg" alt="Contact Bhavath Sales" />
+							<h2>Contact Bhavath Sales</h2>
+						</div>
+						<p>Please complete the form below, and a Bhavath representative will get in touch with you.</p>
+						<div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1">
+							<iframe src="https://go.pardot.com/l/41672/2017-04-07/6n35rj"></iframe>
+						</div>
+						<div class="col-md-8 col-sm-12 col-xs-12 col-md-offset-2 bottomText MT30">
+							<p>You can also reach us on the phone at <a href="tel:866-912-8855">(866) 912-8855</a> or email <a href="mailto:rfp@Bhavath.com">rfp@Bhavath.com</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="myMoreInfo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="myBox">
+					<div class="myHeight">
+						<a class="backMenu" style="float:left;"><img src="../../images/back-arrow.png" alt="Back" title="Back" /></a> 
+						<a class="CloseMenu"><img src="../../images/close.png" alt="Close" title="Close" /></a> 
+						<div class="myIconTitle">
+							<img class="myIcon" src="../../images/contact/more-info.svg" alt="More Info" />
+							<h2>More Info</h2>
+						</div>
+						
+						<p>Please complete the form below, and a Bhavath representative will get in touch with you.</p>
+						<div class="col-md-10 col-sm-12 col-xs-12 col-md-offset-1">
+							<iframe src="../../more-info-form.html"></iframe>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header id="HeaderSection" class="hidden-md hidden-sm hidden-xs">
+  <div class="ForSticky">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 pull-left LogoWrap"> 
+			<a href="../../index.html">
+        		<div class="ActualLogo"> <img  src="../../images/logo.svg" alt="Bhavath"/> </div>
+        		<div class="TagLine"> Enabling Enterprises<br/><strong>in the Cloud</strong> </div>
+			</a> 
+		</div>           
+		<div class="col-lg-3 col-md-3 col-sm-6 RightNavigationWrap pull-right no-gutter">	
+			 <div id="TopRightNavigation">
+			   <div class="ContactUs"> <a class="contactSales" title="Contact" data-rel="myContactBox">Contact </a> </div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+	<div class="v25MenuOuter">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-sm-12 NavigationWrap no-gutter">
+					<nav class="navbar navbar-default">
+						<div class="collapse navbar-collapse changeMenu2" id="MainNavigation">
+						<ul class="nav navbar-nav">
+	<li data-main-nav="home" class="dropdown homeMenu"> <a href="../../index.html" class="blueTheme" title="Bhavath Technologies">Home</a></li>
+	<li data-main-nav="cloud-first" class="dropdown"> <a href="../../cloud-first/index.html" class="blueTheme" title="Cloud-First">Cloud-First</a>
+    <div class="dropdown-menu Cloud">
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">
+			<a href="../../cloud-first/software-driven-business.html" title="Software Driven Business">
+			<div class="cloudFirstCol tabColumn overView" >				
+				<h2 class="MenuColumnTitle">Software Driven <br/>Business</h2>
+				<div class="menuImageBox">					
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/software-s-banner.jpg" alt="Software Driven Business" />
+				</div>
+				<p>Build software in the cloud to compete and stay ahead – by adding new revenue streams, and meeting new business demands through industrialized software delivery at digital speed.</p>				
+			</div>
+			</a>
+			<a href="../../cloud-first/intelligent-analytics.html" title="Intelligence Analytics">
+			<div class="cloudFirstCol  tabColumn overView" >
+				<h2 class="MenuColumnTitle">Intelligent <br/>Analytics</h2>		
+				<div class="menuImageBox hidden-lg">
+					<span class="gradientButton">Learn More</span>
+					<img src="../../images/themeImages/analytics-s-banner.jpg" alt="Intelligent Analytics" />
+				</div>
+				<p>Drive intelligent business strategies with the cloud – to acquire, organize, and analyze data across sources, size, velocity, and formats for customer engagement, business performance, and smart automation.</p>
+				<div class="menuImageBox hidden-xs hidden-sm hidden-md">
+					<span class="gradientButton">Learn More</span>
+					<img src="../../images/themeImages/analytics-s-banner.jpg" alt="Intelligent Analytics" />
+				</div>
+			</div>
+			</a>
+			<a href="../../cloud-first/iot-connected-enterprise.html" title="IoT Connected Enterprise">  
+			<div class="cloudFirstCol  tabColumn overView">
+				<h2 class="MenuColumnTitle">IoT Connected <br/>Enterprise</h2>
+				<div class="menuImageBox">
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/iot-s-banner.jpg" alt="IoT Connected Enterprise" />
+				</div>
+				<p>Leverage the cloud to monetize data from sensors and devices – for creating new revenue streams, better asset management, smart monitoring, innovate connected experiences, and intelligent processes automation.</p>				
+			</div>
+			</a>
+			<a href="../../cloud-first/modern-infrastructure.html" title="Modern Infrastructure">
+			<div class="cloudFirstCol  tabColumn overView" >
+				<h2 class="MenuColumnTitle">Modern <br/>Infrastructure</h2>		
+				<div class="menuImageBox hidden-lg">
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/infrastructure-s-banner.jpg" alt="Modern Infrastructure" />
+				</div>
+				<p>Become a nimble, business centric and modern IT organization with a “service delivery” mindset, smartly leveraging the Cloud to drive better responsiveness and cost efficiencies.</p>
+				<div class="menuImageBox hidden-xs hidden-sm hidden-md">
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/infrastructure-s-banner.jpg"  alt="Modern Infrastructure" />
+				</div>
+			</div>
+			</a>
+			<a href="../../cloud-first/smart-digital-workplace.html" title="Smart Digital Workplace">
+			<div class="cloudFirstCol noBottom tabColumn overView" >
+				<h2 class="MenuColumnTitle">Smart Digital<br/>Workplace</h2>
+				<div class="menuImageBox">
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/workplace-s-banner.jpg" alt="Smart Digital Workplace" />
+				</div>
+				<p>Create an empowered workforce with cloud business apps to enable a collaborative and secure workplace, delivered across locations & devices, and maximize productivity and innovation.</p>
+			</div>
+			</a>
+            <!-- MenuCenterOuter --> 
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </li>
+  
+	<li data-main-nav="software" class="dropdown"> <a href="../../software/index.html" class="blueTheme" title="Software">Software</a>
+	<div class="dropdown-menu Software">
+	  <div class="container">
+		<div class="row">
+		  <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Software_Overview">
+			  <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../software/index.html" title="Learn More">Learn More</a>
+						<a href="../../software/index.html" title="Learn More"><img src="../../images/themeImages/software-s-banner.jpg" alt="Software Overview" /></a>
+					</div>
+					<p>Deliver software that enables competitive advantage for enterprises – to add new revenue streams, and meet new business demands through industrialized software delivery at digital speed. </p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Software_Services">
+			  <h2 class="MenuColumnTitle">Services</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../software/services/software-development/index.html" title="Development">Development</a></li>
+					<li><a href="../../software/services/user-experience-interface-design-development.html" title="UX / UI">UX / UI</a></li>
+					<li><a href="../../software/services/software-testing/index.html" title="Testing">Testing</a></li>
+					<li><a href="../../software/services/devops/index.html" title="DevOps">DevOps</a></li>
+				  </ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Software_Experties" >
+			  <h2 class="MenuColumnTitle">Expertise</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../software/expertise/saas-software-development.html" title="SaaS Solutions">SaaS Solutions</a></li>
+					<li><a href="../../software/expertise/mobile-software-development-services.html" title="Mobile Apps">Mobile Apps</a></li>
+					<li><a href="../../software/expertise/software-product-development.html" title="Software Products">Software Products</a></li>
+					<li><a href="../../software/expertise/custom-software-development-services.html" title="Custom Software">Custom Software</a></li>
+					<li><a href="../../software/expertise/intelligent-business-applications.html" title="Intelligent Apps">Intelligent Apps</a></li>
+					<li><a href="../../software/expertise/xaas-platform-development.html" title="XaaS Solutions">XaaS Solutions</a></li>
+					<li><a href="../../software/expertise/online-platforms.html" title="Online Platforms">Online Platforms</a></li>
+				  </ul>
+				</div>
+			</div>            
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Software_Platforms">
+			  <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul platforms">
+					<li><a href="../../software/technology/azure-paas-development-services.html" title="Azure PaaS">
+					  <div><img src="../../images/platform/azure.svg" alt="Azure PaaS"/></div>
+					  <span>Azure PaaS</span></a></li>
+					<li><a href="../../software/technology/dot-net-development-services.html" title="Microsoft.NET" >
+					  <div><img src="../../images/platform/microsoft.net.svg" alt="Micro Soft .NET" /></div>
+					  <span>.NET</span></a></li>
+					<li><a href="../../software/technology/java-development-services.html" title="Java">
+					  <div><img src="../../images/platform/java.svg" alt="Java" /></div>
+					  <span>Java</span></a></li>
+					<li><a href="../../software/technology/ios-android-xamarin-cordova-mobile-app-development-services.html" title="Mobile">
+					  <div><img src="../../images/platform/mobile.svg" alt="Mobile" /></div>
+					  <span>Mobile</span></a></li>
+					<li><a href="../../software/technology/c-cpp-systems-programming-services.html" title="C++" >
+					  <div><img src="../../images/platform/cpp.svg" alt="C++"/></div>
+					  <span>C++</span></a></li>
+					<li><a href="../../software/technology/php-development-services.html" title="PHP">
+					  <div><img src="../../images/platform/php.svg" alt="PHP"/></div>
+					  <span>PHP</span></a></li>
+					<li><a href="../../software/technology/javascript-development-angularjs-nodejs.html" title="Javascript">
+					  <div><img src="../../images/platform/javascript.svg" alt="Javascript"/></div>
+					  <span>JavaScript</span></a></li>
+					<li><a href="../../software/technology/python-development-services.html" title="Python">
+					  <div><img src="../../images/platform/python.svg" alt="Python" /></div>
+					  <span>Python</span></a></li>
+					<li><a href="../../software/technology/ruby-on-rails-development-services.html" title="Ruby on Rails">
+					  <div><img src="../../images/platform/ruby-on-rails.svg" alt="Ruby on Rails"/></div>
+					  <span>Ruby on Rails</span></a></li>
+				  </ul>
+				</div>
+			</div>
+		  </div>
+		  <!-- MenuCenterOuter --> 
+		</div>
+	  </div>
+	</div>
+	</li>
+	
+  <li data-main-nav="analytics" class="dropdown"> <a href="../../analytics/index.html" class="blueTheme" title="Analytics">Analytics</a>
+    <div class="dropdown-menu Analytics" >
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Analytics_Overview">
+              <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../analytics/index.html" title="Learn More">Learn More</a>
+						<a href="../../analytics/index.html" title="Learn More"><img src="../../images/themeImages/analytics-s-banner.jpg" alt="Analytics Overview" /></a>
+					</div>
+					<p>Deliver analytics solutions that drive intelligent business strategies by analyzing data to develop actionable insights for improving customer engagement, business performance, and enable smart automation.</p>
+				</div>
+            </div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Analytics_Services">			
+              <h2 class="MenuColumnTitle">Services</h2>
+				<div class="closeableBoxMobile">
+					<ul class="D-ul">
+						<li><a href="../../analytics/services/business-intelligence.html" title="Business Intelligence">Business Intelligence</a></li> 
+						<li><a href="../../analytics/services/big-data-analytics.html" title="Big Data Analytics">Big Data Analytics</a></li> 
+						<li><a href="../../analytics/services/enterprise-data-management.html" title="Enterprise Data Management">Enterprise Data Management</a></li>
+						<li><a href="../../analytics/services/dataops.html" title="DataOps">DataOps</a></li>
+					</ul>
+				</div>
+            </div>                
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Analytics_Platforms">
+              <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+					<ul class="D-ul platforms">
+						<li><a href="../../analytics/technology/azure-cortana-consulting-development-implementation-services.html" title="Azure Cortana"><div><img src="../../images/platform/azure.svg" alt="Azure Cortana"/></div><span>Azure Cortana</span></a></li>
+						<li><a href="../../analytics/technology/apache-big-data-analytics.html" title="Apache Big Data"><div><img src="../../images/platform/apache-big-data.svg" alt="Apache Big Data"/></div><span>Apache Big Data</span></a></li>
+						<li><a href="../../analytics/technology/power-bi-consulting-development-implementation-services.html" title="PowerBI" ><div><img src="../../images/platform/power-bi.svg" alt="PowerBI"/></div><span>PowerBI</span></a></li>
+						<li><a href="../../analytics/technology/sql-server-development-support-services.html" title="SQL"><div><img src="../../images/platform/sql.svg" alt="SQL"/></div><span>SQL</span></a></li>
+						<li><a href="../../analytics/technology/tableau-consulting-development-implementation-services.html" title="Tableau"><div><img src="../../images/platform/tableau.svg" alt="Tableau"/></div><span>Tableau</span></a></li>
+						<li><a href="../../analytics/technology/logi-analytics-consulting-implementation-services.html" title="Logi"><div><img src="../../images/platform/logi.svg" alt="Logi"/></div><span>Logi</span></a></li>
+						<li><a href="../../analytics/technology/looker-consulting-implementation-services.html" title="Looker"><div><img src="../../images/platform/looker.svg" alt="Looker"/></div><span>Looker</span></a></li>
+					</ul>
+				</div>
+            </div>
+          </div>
+          <!-- MenuCenterOuter --> 
+        </div>
+      </div>
+    </div>
+  </li>
+  
+	<li data-main-nav="iot" class="dropdown IOT"> <a href="../index.html" class="IoTTheme" title="Internet Of Things">Internet Of Things</a>
+	<div class="dropdown-menu IOT" >
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">			  
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox IOT_Overview">
+				  <h2 class="MenuColumnTitle">Overview</h2>
+					<div class="closeableBoxMobile" data-view="open">
+						<div class="menuImageBox">
+							<a class="gradientButton" href="../index.html" title="Learn More">Learn More</a>
+							<a href="../index.html" title="Learn More"><img src="../../images/themeImages/iot-s-banner.jpg" alt="IoT Overview" /></a>
+						</div>
+						<p>Deliver IoT solutions that drive new revenue streams, better asset management, smart monitoring, innovate connected experiences, and intelligent processes automation.</p>	
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn IOT_Services">
+				  <h2 class="MenuColumnTitle">Services</h2>
+					<div class="closeableBoxMobile">
+						<ul class="D-ul">
+							<li><a href="../services/connected-platform.html" title="Connected Platform">Connected Platform</a></li>
+							<li><a href="../services/stream-processing-and-analytics.html" title="Stream Analytics">Stream Processing</a></li>
+							<li><a href="../services/analytics.html" title="Data at Rest Analytics">Analytics</a></li>
+							<li><a href="../services/intelligent-iot-systems.html" title="Intelligence IOT System">Intelligent IoT Systems</a></li>
+							
+						</ul>
+					</div>
+				</div>
+            
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 tabColumn IOT_Platforms">
+              <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul platforms">
+						<li><a href="azure-iot-suite-development.html" title="Azure IoT Suite"><div><img src="../../images/platform/azure.svg" alt="Azure IoT Suite"/></div><span>Azure IoT Suite</span></a></li>					  
+						<li><a href="control-systems-plc-programming.html" title="Control Systems"><div><img src="../../images/platform/plc.svg" alt="Control Systems"/></div><span>Control Systems</span></a></li>
+				  </ul>
+				</div>
+            </div>
+           
+           
+            <!-- MenuCenterOuter --> 
+          </div>
+        </div>
+      </div>
+	
+    </div>
+		
+	</li>
+	<li data-main-nav="infrastructure" class="dropdown"> <a href="../../infrastructure/index.html" class="blueTheme" title="Infrastructure">Infrastructure</a>
+    <div class="dropdown-menu Infrastructure">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- MenuCenterOuter -->
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Infrastructure_Overview">
+			  <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../infrastructure/index.html" title="Learn More">Learn More</a>
+						<a  href="../../infrastructure/index.html" title="Learn More"><img src="../../images/themeImages/infrastructure-s-banner.jpg" alt="Infrastructure Overview" /></a>
+					</div>
+					<p>Deploy modern infrastructure to enable a nimble, business centric and modern IT organization with a “service delivery” mindset, smartly leveraging the Cloud for business agility and cost efficiency.</p>	
+				</div>
+			</div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Infrastructure_Services" >
+              <h2 class="MenuColumnTitle">Services</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../infrastructure/services/assessment-planning.html" title="Assessment & Planning">Assessment & Planning</a></li>
+					<li><a href="../../infrastructure/services/deployment-migration.html" title="Deployment & Migration">Deployment & Migration</a></li>
+					<li><a href="../../infrastructure/services/azure-managed-services.html" title="Azure Managed Services">Azure Managed Services</a></li>
+				  </ul>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Infrastructure_Experties">
+              <h2 class="MenuColumnTitle">Azure Expertise</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../infrastructure/azure-expertise/datacenter-migration.html" title="Datacenter Migration">Datacenter Migration</a></li>
+					<li><a href="../../infrastructure/azure-expertise/governance-and-optimization.html" title="Governance & Optimization">Governance & Optimization</a></li>
+					<li><a href="../../infrastructure/azure-expertise/data-protection-and-recovery.html" title="Data Protection & Recovery">Data Protection & Recovery</a></li>
+					<li><a href="../../infrastructure/azure-expertise/information-security.html" title="Information Security">Information Security</a></li>
+				  </ul>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Infrastructure_Platforms">
+              <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+					<ul class="D-ul platforms">
+						<li><a href="../../infrastructure/technology/azure-infrastructure.html" title="Azure IoT Suite"><div><img src="../../images/platform/azure.svg" alt="Azure Infrastructure"/></div><span>Azure Infrastructure</span></a></li>
+					</ul>
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+	<li data-main-nav="workplace" class="dropdown"> <a href="../../workplace/index.html" class="blueTheme" title="Workplace">Workplace</a>
+    <div class="dropdown-menu Workplace">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- MenuCenterOuter -->
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Workplace_Overview">
+			  <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../workplace/index.html" title="Learn More">Learn More</a>
+						<a href="../../workplace/index.html" title="Learn More"><img src="../../images/themeImages/workplace-s-banner.jpg" alt="Workplace Overview" /></a>
+					</div>
+					<p>Deploy digital workplace solutions that empower the workforce with a collaborative and secure work environment, across locations & devices, optimized for agility & productivity.</p>	
+				</div>
+			</div>
+            
+             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Workplace_Expertise" >
+              <h2 class="MenuColumnTitle">Expertise</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../workplace/expertise/productivity.html" title="Workplace Productivity">Workplace Productivity</a></li>
+					<li><a href="../../workplace/expertise/intelligent-operations.html" title="Intelligent Operations">Intelligent Operations</a></li>           
+					<li><a href="../../workplace/expertise/enterprise-mobility-and-security.html" title="Mobility & Security">Mobility & Security</a></li>                
+				  </ul>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Workplace_Platforms">
+              <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul platforms">
+					<li><a href="../../workplace/technology/office-365-consulting-implementation-services.html" title="Office 365"><div><img src="../../images/platform/office365.svg" alt="Office365"/></div><span>Office 365</span></a></li>
+					<li><a href="../../workplace/technology/enterprise-mobility-security-consulting-implementation-services.html" title="Enterprise Mobility + Security">
+					  <div><img src="../../images/platform/enterprise-mobility-security.svg" alt="Enterprise Mobility + Security"/></div>
+					  <span>Enterprise Mobility + Security</span></a></li>
+					<li><a href="../../workplace/technology/dynamics-365-consulting-implementation-services.html" title="Dynamics 365"><div><img src="../../images/platform/dynamic-365.svg" alt="Dynamics 365"/></div><span>Dynamics 365</span></a></li>
+				  </ul>
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li data-main-nav="industry" class="dropdown ByIndustry"> <a href="../../industry/index.html" class="blueTheme" title="Industry">Industry</a>
+    <div class="dropdown-menu ByIndustry">
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox ByIndustry_Overview">
+			  <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../industry/index.html" title="Learn More">Learn More</a>
+						<a href="../../industry/index.html" title="Learn More"><img src="../../images/themeImages/industry-s-banner.jpg" alt="Industry Overview" /></a>
+					</div>
+					<p>Drive innovation and disruption in your industry and explore opportunities in adjacent markets by experimenting with new business & operational models, digital trends, and technologies.</p>	
+				</div>
+			</div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn ByIndustry_Industry">
+              <h2 class="MenuColumnTitle">Verticals</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li class="leftI"><a href="../../industry/energy/index.html" title="Energy"><img src="../../images/industryExpertise/energy.svg" width="40" alt="Energy" /><span>Energy</span></a></li>
+					<li class="rightI"><a href="../../industry/engineering-construction/index.html" title="Engineering &amp; Construction"><img src="../../images/industryExpertise/construction.svg" width="40" alt="Engineering &amp; Construction" /><span>Engineering &amp; Construction</span></a></li>
+					<li class="leftI"><a href="../../industry/healthcare/index.html" title="Healthcare"><img src="../../images/industryExpertise/healthcare.svg" width="40" alt="Healthcare" /><span>Healthcare</span></a></li>
+					<li class="rightI"><a href="../../industry/lifesciences/index.html" title="LifeSciences"><img src="../../images/industryExpertise/life-science.svg" width="40" alt="Life Sciences" /><span>Life Sciences</span></a></li>
+					<li class="leftI"><a href="../../industry/logistics-transportation/index.html" title="Logistics & Transportation"><img src="../../images/industryExpertise/logistics-and-distribution.svg" width="40" alt="Logistics & Transportation" /><span>Logistics & Transportation</span></a></li>
+					<li class="rightI"><a href="../../industry/manufacturing/index.html" title="Manufacturing"><img src="../../images/industryExpertise/manufacturing.svg" width="40" alt="Manufacturing" /><span>Manufacturing</span></a></li>  
+					<li class="leftI"><a href="../../industry/retail/index.html" title="Retail"><img src="../../images/industryExpertise/retail.svg" width="40" alt="Retail" /><span>Retail</span></a></li>  
+					<li class="rightI"><a href="../../industry/technology/index.html" title="Technology"><img src="../../images/industryExpertise/technology.svg" width="40" alt="Technology" /><span>Technology</span></a></li>
+				  </ul>
+				</div>
+            </div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn ByIndustryIndustry_Expertise">
+              <h2 class="MenuColumnTitle">Segments</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../industry/segments/benefits-administration.html" title="Benefits Administration"><img src="../../images/industryExpertise/benefits-administration.svg" width="40" alt="Benefits Administration" /><span>Benefits Administration</span></a></li>
+					<li><a href="../../industry/segments/cards-payments-transfers.html" title="Cards, Payments & Transfers"><img src="../../images/industryExpertise/cards-payments-transfers.svg" width="40" alt="Cards, Payments & Transfers" /><span>Cards, Payments & Transfers</span></a></li>
+					<li><a href="../../industry/segments/health-fitness-leisure-clubs.html" title="Health, Fitness & Leisure"><img src="../../images/industryExpertise/health-fitness-leisure.svg" width="40" alt="Health, Fitness & Leisure" /><span>Health, Fitness & Leisure</span></a></li>
+					  <li><a href="../../industry/lifesciences/medical-devices.html" title="Medical Devices"><img src="../../images/industryExpertise/medical-devices.svg" width="40" alt="Medical Devices" /><span>Medical Devices</span></a></li>				
+				  </ul>
+				</div>
+            </div>
+          </div>
+          <!-- MenuCenterOuter --> 
+        </div>
+      </div>
+    </div>
+  </li>
+  <li data-main-nav="company" class="Company dropdown"><a href="../../company/index.html" title="Company" class="blueTheme">Company</a>
+    <div class="dropdown-menu Company">
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Company_Overview">
+              <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../company/index.html" title="Learn More">Learn More</a>
+						<a href="../../company/index.html" title="Learn More"><img src="../../images/themeImages/company-s-banner.jpg" alt="Company Overview" /></a>
+					</div>
+					<p>Bhavath is a cloud-first technology services company, focused on enabling digital business transformation initiatives in infrastructure modernization, software driven business, intelligent analytics, IoT connected enterprise, and digital workplace productivity.</p>	
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn ThirdBox MB30 Company_News">
+              <h2 class="MenuColumnTitle">Latest News</h2>
+                <div class="closeableBoxMobile">						
+					<div class="loadNews" data-news-wp-id="1886" data-url="../../company/about/news/index.html"></div>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Company_Resources">
+              <h2 class="MenuColumnTitle">Success Stories</h2>
+				<div class="closeableBoxMobile">					
+					<div class="loadSs" data-ss-wp-id="5229" data-url="../../company/resources/success-stories/index.html" ></div>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn FirstBox Company_About">
+              <h2 class="MenuColumnTitle">About</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">  
+					<li><a href="../../company/about/our-team.html" title="Our Team">Our Team</a></li>
+					<li><a href="../../company/about/news/index.html" title="News & Events">News & Events</a></li>
+					<li><a href="../../company/about/partners.html" title="Partners">Partners</a></li>
+					<li><a href="../../company/about/certifications.html" title="Certifications">Certifications</a></li>
+					<li><a href="../../company/about/careers-usa.html" title="Careers">Careers</a></li>
+					<li><a href="../../company/about/locations.html" title="Locations">Locations</a></li>
+				  </ul>
+				</div>
+            </div>
+            
+          </div>
+          <!-- MenuCenterOuter --> 
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<header id="HeaderSectionMobile" class="hidden-lg FixedNav">
+  <div class="ForSticky">
+    <div class="container">
+      <div class="row">
+		<div class="NavigationWrap col-sm-6 col-xs-6">
+          <div class="NavButtonBox col-sm-12 col-xs-12 no-gutter">
+            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#MainNavigationMobile" aria-expanded="false" data-rel-div="MainNavigationMobile"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="CloseHTML">&times;</span> </button>
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-6 pull-left LogoWrap  no-gutter"> <a href="../../index.html">
+          <div class="ActualLogo"> <img  src="../../images/logo.svg" alt="Bhavath" title="Bhavath" /> </div>
+          <div class="TagLine"> Enabling Enterprises<br/>
+            <strong>in the Cloud</strong> </div>
+          </a> 
+		</div>
+        
+        <div class="RightNavigationWrap col-sm-6 col-xs-6 no-gutter">
+          <div class="RightBox">
+            <div id="TopRightNavigationM">
+              
+                <div class="ContactUs"> <a class="contactSales" title="Contact" data-rel="myContactBox">Contact </a> </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="mobileSlideMenu">
+	<div class="MainNavigationMobile LightBoxDiv">
+		<div class="container" style="position: relative;padding:0px;">
+		  <div class="NavBox">
+			<nav class="collapse navbar-collapse" id="MainNavigationMobile" aria-expanded="false">
+			  <ul class="nav navbar-nav">
+	<li data-main-nav="home" class="dropdown homeMenu"> <a href="../../index.html" class="blueTheme" title="Bhavath Technologies">Home</a></li>
+	<li data-main-nav="cloud-first" class="dropdown"> <a href="../../cloud-first/index.html" class="blueTheme" title="Cloud-First">Cloud-First</a>
+    <div class="dropdown-menu Cloud">
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">
+			<a href="../../cloud-first/software-driven-business.html" title="Software Driven Business">
+			<div class="cloudFirstCol tabColumn overView" >				
+				<h2 class="MenuColumnTitle">Software Driven <br/>Business</h2>
+				<div class="menuImageBox">					
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/software-s-banner.jpg" alt="Software Driven Business" />
+				</div>
+				<p>Build software in the cloud to compete and stay ahead – by adding new revenue streams, and meeting new business demands through industrialized software delivery at digital speed.</p>				
+			</div>
+			</a>
+			<a href="../../cloud-first/intelligent-analytics.html" title="Intelligence Analytics">
+			<div class="cloudFirstCol  tabColumn overView" >
+				<h2 class="MenuColumnTitle">Intelligent <br/>Analytics</h2>		
+				<div class="menuImageBox hidden-lg">
+					<span class="gradientButton">Learn More</span>
+					<img src="../../images/themeImages/analytics-s-banner.jpg" alt="Intelligent Analytics" />
+				</div>
+				<p>Drive intelligent business strategies with the cloud – to acquire, organize, and analyze data across sources, size, velocity, and formats for customer engagement, business performance, and smart automation.</p>
+				<div class="menuImageBox hidden-xs hidden-sm hidden-md">
+					<span class="gradientButton">Learn More</span>
+					<img src="../../images/themeImages/analytics-s-banner.jpg" alt="Intelligent Analytics" />
+				</div>
+			</div>
+			</a>
+			<a href="../../cloud-first/iot-connected-enterprise.html" title="IoT Connected Enterprise">  
+			<div class="cloudFirstCol  tabColumn overView">
+				<h2 class="MenuColumnTitle">IoT Connected <br/>Enterprise</h2>
+				<div class="menuImageBox">
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/iot-s-banner.jpg" alt="IoT Connected Enterprise" />
+				</div>
+				<p>Leverage the cloud to monetize data from sensors and devices – for creating new revenue streams, better asset management, smart monitoring, innovate connected experiences, and intelligent processes automation.</p>				
+			</div>
+			</a>
+			<a href="../../cloud-first/modern-infrastructure.html" title="Modern Infrastructure">
+			<div class="cloudFirstCol  tabColumn overView" >
+				<h2 class="MenuColumnTitle">Modern <br/>Infrastructure</h2>		
+				<div class="menuImageBox hidden-lg">
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/infrastructure-s-banner.jpg" alt="Modern Infrastructure" />
+				</div>
+				<p>Become a nimble, business centric and modern IT organization with a “service delivery” mindset, smartly leveraging the Cloud to drive better responsiveness and cost efficiencies.</p>
+				<div class="menuImageBox hidden-xs hidden-sm hidden-md">
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/infrastructure-s-banner.jpg"  alt="Modern Infrastructure" />
+				</div>
+			</div>
+			</a>
+			<a href="../../cloud-first/smart-digital-workplace.html" title="Smart Digital Workplace">
+			<div class="cloudFirstCol noBottom tabColumn overView" >
+				<h2 class="MenuColumnTitle">Smart Digital<br/>Workplace</h2>
+				<div class="menuImageBox">
+					<span class="gradientButton" >Learn More</span>
+					<img src="../../images/themeImages/workplace-s-banner.jpg" alt="Smart Digital Workplace" />
+				</div>
+				<p>Create an empowered workforce with cloud business apps to enable a collaborative and secure workplace, delivered across locations & devices, and maximize productivity and innovation.</p>
+			</div>
+			</a>
+            <!-- MenuCenterOuter --> 
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </li>
+  
+	<li data-main-nav="software" class="dropdown"> <a href="../../software/index.html" class="blueTheme" title="Software">Software</a>
+	<div class="dropdown-menu Software">
+	  <div class="container">
+		<div class="row">
+		  <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Software_Overview">
+			  <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../software/index.html" title="Learn More">Learn More</a>
+						<a href="../../software/index.html" title="Learn More"><img src="../../images/themeImages/software-s-banner.jpg" alt="Software Overview" /></a>
+					</div>
+					<p>Deliver software that enables competitive advantage for enterprises – to add new revenue streams, and meet new business demands through industrialized software delivery at digital speed. </p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Software_Services">
+			  <h2 class="MenuColumnTitle">Services</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../software/services/software-development/index.html" title="Development">Development</a></li>
+					<li><a href="../../software/services/user-experience-interface-design-development.html" title="UX / UI">UX / UI</a></li>
+					<li><a href="../../software/services/software-testing/index.html" title="Testing">Testing</a></li>
+					<li><a href="../../software/services/devops/index.html" title="DevOps">DevOps</a></li>
+				  </ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Software_Experties" >
+			  <h2 class="MenuColumnTitle">Expertise</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../software/expertise/saas-software-development.html" title="SaaS Solutions">SaaS Solutions</a></li>
+					<li><a href="../../software/expertise/mobile-software-development-services.html" title="Mobile Apps">Mobile Apps</a></li>
+					<li><a href="../../software/expertise/software-product-development.html" title="Software Products">Software Products</a></li>
+					<li><a href="../../software/expertise/custom-software-development-services.html" title="Custom Software">Custom Software</a></li>
+					<li><a href="../../software/expertise/intelligent-business-applications.html" title="Intelligent Apps">Intelligent Apps</a></li>
+					<li><a href="../../software/expertise/xaas-platform-development.html" title="XaaS Solutions">XaaS Solutions</a></li>
+					<li><a href="../../software/expertise/online-platforms.html" title="Online Platforms">Online Platforms</a></li>
+				  </ul>
+				</div>
+			</div>            
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Software_Platforms">
+			  <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul platforms">
+					<li><a href="../../software/technology/azure-paas-development-services.html" title="Azure PaaS">
+					  <div><img src="../../images/platform/azure.svg" alt="Azure PaaS"/></div>
+					  <span>Azure PaaS</span></a></li>
+					<li><a href="../../software/technology/dot-net-development-services.html" title="Microsoft.NET" >
+					  <div><img src="../../images/platform/microsoft.net.svg" alt="Micro Soft .NET" /></div>
+					  <span>.NET</span></a></li>
+					<li><a href="../../software/technology/java-development-services.html" title="Java">
+					  <div><img src="../../images/platform/java.svg" alt="Java" /></div>
+					  <span>Java</span></a></li>
+					<li><a href="../../software/technology/ios-android-xamarin-cordova-mobile-app-development-services.html" title="Mobile">
+					  <div><img src="../../images/platform/mobile.svg" alt="Mobile" /></div>
+					  <span>Mobile</span></a></li>
+					<li><a href="../../software/technology/c-cpp-systems-programming-services.html" title="C++" >
+					  <div><img src="../../images/platform/cpp.svg" alt="C++"/></div>
+					  <span>C++</span></a></li>
+					<li><a href="../../software/technology/php-development-services.html" title="PHP">
+					  <div><img src="../../images/platform/php.svg" alt="PHP"/></div>
+					  <span>PHP</span></a></li>
+					<li><a href="../../software/technology/javascript-development-angularjs-nodejs.html" title="Javascript">
+					  <div><img src="../../images/platform/javascript.svg" alt="Javascript"/></div>
+					  <span>JavaScript</span></a></li>
+					<li><a href="../../software/technology/python-development-services.html" title="Python">
+					  <div><img src="../../images/platform/python.svg" alt="Python" /></div>
+					  <span>Python</span></a></li>
+					<li><a href="../../software/technology/ruby-on-rails-development-services.html" title="Ruby on Rails">
+					  <div><img src="../../images/platform/ruby-on-rails.svg" alt="Ruby on Rails"/></div>
+					  <span>Ruby on Rails</span></a></li>
+				  </ul>
+				</div>
+			</div>
+		  </div>
+		  <!-- MenuCenterOuter --> 
+		</div>
+	  </div>
+	</div>
+	</li>
+	
+  <li data-main-nav="analytics" class="dropdown"> <a href="../../analytics/index.html" class="blueTheme" title="Analytics">Analytics</a>
+    <div class="dropdown-menu Analytics" >
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Analytics_Overview">
+              <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../analytics/index.html" title="Learn More">Learn More</a>
+						<a href="../../analytics/index.html" title="Learn More"><img src="../../images/themeImages/analytics-s-banner.jpg" alt="Analytics Overview" /></a>
+					</div>
+					<p>Deliver analytics solutions that drive intelligent business strategies by analyzing data to develop actionable insights for improving customer engagement, business performance, and enable smart automation.</p>
+				</div>
+            </div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Analytics_Services">			
+              <h2 class="MenuColumnTitle">Services</h2>
+				<div class="closeableBoxMobile">
+					<ul class="D-ul">
+						<li><a href="../../analytics/services/business-intelligence.html" title="Business Intelligence">Business Intelligence</a></li> 
+						<li><a href="../../analytics/services/big-data-analytics.html" title="Big Data Analytics">Big Data Analytics</a></li> 
+						<li><a href="../../analytics/services/enterprise-data-management.html" title="Enterprise Data Management">Enterprise Data Management</a></li>
+						<li><a href="../../analytics/services/dataops.html" title="DataOps">DataOps</a></li>
+					</ul>
+				</div>
+            </div>                
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Analytics_Platforms">
+              <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+					<ul class="D-ul platforms">
+						<li><a href="../../analytics/technology/azure-cortana-consulting-development-implementation-services.html" title="Azure Cortana"><div><img src="../../images/platform/azure.svg" alt="Azure Cortana"/></div><span>Azure Cortana</span></a></li>
+						<li><a href="../../analytics/technology/apache-big-data-analytics.html" title="Apache Big Data"><div><img src="../../images/platform/apache-big-data.svg" alt="Apache Big Data"/></div><span>Apache Big Data</span></a></li>
+						<li><a href="../../analytics/technology/power-bi-consulting-development-implementation-services.html" title="PowerBI" ><div><img src="../../images/platform/power-bi.svg" alt="PowerBI"/></div><span>PowerBI</span></a></li>
+						<li><a href="../../analytics/technology/sql-server-development-support-services.html" title="SQL"><div><img src="../../images/platform/sql.svg" alt="SQL"/></div><span>SQL</span></a></li>
+						<li><a href="../../analytics/technology/tableau-consulting-development-implementation-services.html" title="Tableau"><div><img src="../../images/platform/tableau.svg" alt="Tableau"/></div><span>Tableau</span></a></li>
+						<li><a href="../../analytics/technology/logi-analytics-consulting-implementation-services.html" title="Logi"><div><img src="../../images/platform/logi.svg" alt="Logi"/></div><span>Logi</span></a></li>
+						<li><a href="../../analytics/technology/looker-consulting-implementation-services.html" title="Looker"><div><img src="../../images/platform/looker.svg" alt="Looker"/></div><span>Looker</span></a></li>
+					</ul>
+				</div>
+            </div>
+          </div>
+          <!-- MenuCenterOuter --> 
+        </div>
+      </div>
+    </div>
+  </li>
+  
+	<li data-main-nav="iot" class="dropdown IOT"> <a href="../index.html" class="IoTTheme" title="Internet Of Things">Internet Of Things</a>
+	<div class="dropdown-menu IOT" >
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">			  
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox IOT_Overview">
+				  <h2 class="MenuColumnTitle">Overview</h2>
+					<div class="closeableBoxMobile" data-view="open">
+						<div class="menuImageBox">
+							<a class="gradientButton" href="../index.html" title="Learn More">Learn More</a>
+							<a href="../index.html" title="Learn More"><img src="../../images/themeImages/iot-s-banner.jpg" alt="IoT Overview" /></a>
+						</div>
+						<p>Deliver IoT solutions that drive new revenue streams, better asset management, smart monitoring, innovate connected experiences, and intelligent processes automation.</p>	
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn IOT_Services">
+				  <h2 class="MenuColumnTitle">Services</h2>
+					<div class="closeableBoxMobile">
+						<ul class="D-ul">
+							<li><a href="../services/connected-platform.html" title="Connected Platform">Connected Platform</a></li>
+							<li><a href="../services/stream-processing-and-analytics.html" title="Stream Analytics">Stream Processing</a></li>
+							<li><a href="../services/analytics.html" title="Data at Rest Analytics">Analytics</a></li>
+							<li><a href="../services/intelligent-iot-systems.html" title="Intelligence IOT System">Intelligent IoT Systems</a></li>
+							
+						</ul>
+					</div>
+				</div>
+            
+            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 tabColumn IOT_Platforms">
+              <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul platforms">
+						<li><a href="azure-iot-suite-development.html" title="Azure IoT Suite"><div><img src="../../images/platform/azure.svg" alt="Azure IoT Suite"/></div><span>Azure IoT Suite</span></a></li>					  
+						<li><a href="control-systems-plc-programming.html" title="Control Systems"><div><img src="../../images/platform/plc.svg" alt="Control Systems"/></div><span>Control Systems</span></a></li>
+				  </ul>
+				</div>
+            </div>
+           
+           
+            <!-- MenuCenterOuter --> 
+          </div>
+        </div>
+      </div>
+	
+    </div>
+		
+	</li>
+	<li data-main-nav="infrastructure" class="dropdown"> <a href="../../infrastructure/index.html" class="blueTheme" title="Infrastructure">Infrastructure</a>
+    <div class="dropdown-menu Infrastructure">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- MenuCenterOuter -->
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Infrastructure_Overview">
+			  <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../infrastructure/index.html" title="Learn More">Learn More</a>
+						<a  href="../../infrastructure/index.html" title="Learn More"><img src="../../images/themeImages/infrastructure-s-banner.jpg" alt="Infrastructure Overview" /></a>
+					</div>
+					<p>Deploy modern infrastructure to enable a nimble, business centric and modern IT organization with a “service delivery” mindset, smartly leveraging the Cloud for business agility and cost efficiency.</p>	
+				</div>
+			</div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Infrastructure_Services" >
+              <h2 class="MenuColumnTitle">Services</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../infrastructure/services/assessment-planning.html" title="Assessment & Planning">Assessment & Planning</a></li>
+					<li><a href="../../infrastructure/services/deployment-migration.html" title="Deployment & Migration">Deployment & Migration</a></li>
+					<li><a href="../../infrastructure/services/azure-managed-services.html" title="Azure Managed Services">Azure Managed Services</a></li>
+				  </ul>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Infrastructure_Experties">
+              <h2 class="MenuColumnTitle">Azure Expertise</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../infrastructure/azure-expertise/datacenter-migration.html" title="Datacenter Migration">Datacenter Migration</a></li>
+					<li><a href="../../infrastructure/azure-expertise/governance-and-optimization.html" title="Governance & Optimization">Governance & Optimization</a></li>
+					<li><a href="../../infrastructure/azure-expertise/data-protection-and-recovery.html" title="Data Protection & Recovery">Data Protection & Recovery</a></li>
+					<li><a href="../../infrastructure/azure-expertise/information-security.html" title="Information Security">Information Security</a></li>
+				  </ul>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Infrastructure_Platforms">
+              <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+					<ul class="D-ul platforms">
+						<li><a href="../../infrastructure/technology/azure-infrastructure.html" title="Azure IoT Suite"><div><img src="../../images/platform/azure.svg" alt="Azure Infrastructure"/></div><span>Azure Infrastructure</span></a></li>
+					</ul>
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+	<li data-main-nav="workplace" class="dropdown"> <a href="../../workplace/index.html" class="blueTheme" title="Workplace">Workplace</a>
+    <div class="dropdown-menu Workplace">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- MenuCenterOuter -->
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Workplace_Overview">
+			  <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../workplace/index.html" title="Learn More">Learn More</a>
+						<a href="../../workplace/index.html" title="Learn More"><img src="../../images/themeImages/workplace-s-banner.jpg" alt="Workplace Overview" /></a>
+					</div>
+					<p>Deploy digital workplace solutions that empower the workforce with a collaborative and secure work environment, across locations & devices, optimized for agility & productivity.</p>	
+				</div>
+			</div>
+            
+             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Workplace_Expertise" >
+              <h2 class="MenuColumnTitle">Expertise</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../workplace/expertise/productivity.html" title="Workplace Productivity">Workplace Productivity</a></li>
+					<li><a href="../../workplace/expertise/intelligent-operations.html" title="Intelligent Operations">Intelligent Operations</a></li>           
+					<li><a href="../../workplace/expertise/enterprise-mobility-and-security.html" title="Mobility & Security">Mobility & Security</a></li>                
+				  </ul>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Workplace_Platforms">
+              <h2 class="MenuColumnTitle">Technology</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul platforms">
+					<li><a href="../../workplace/technology/office-365-consulting-implementation-services.html" title="Office 365"><div><img src="../../images/platform/office365.svg" alt="Office365"/></div><span>Office 365</span></a></li>
+					<li><a href="../../workplace/technology/enterprise-mobility-security-consulting-implementation-services.html" title="Enterprise Mobility + Security">
+					  <div><img src="../../images/platform/enterprise-mobility-security.svg" alt="Enterprise Mobility + Security"/></div>
+					  <span>Enterprise Mobility + Security</span></a></li>
+					<li><a href="../../workplace/technology/dynamics-365-consulting-implementation-services.html" title="Dynamics 365"><div><img src="../../images/platform/dynamic-365.svg" alt="Dynamics 365"/></div><span>Dynamics 365</span></a></li>
+				  </ul>
+				</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li data-main-nav="industry" class="dropdown ByIndustry"> <a href="../../industry/index.html" class="blueTheme" title="Industry">Industry</a>
+    <div class="dropdown-menu ByIndustry">
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox ByIndustry_Overview">
+			  <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../industry/index.html" title="Learn More">Learn More</a>
+						<a href="../../industry/index.html" title="Learn More"><img src="../../images/themeImages/industry-s-banner.jpg" alt="Industry Overview" /></a>
+					</div>
+					<p>Drive innovation and disruption in your industry and explore opportunities in adjacent markets by experimenting with new business & operational models, digital trends, and technologies.</p>	
+				</div>
+			</div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn ByIndustry_Industry">
+              <h2 class="MenuColumnTitle">Verticals</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li class="leftI"><a href="../../industry/energy/index.html" title="Energy"><img src="../../images/industryExpertise/energy.svg" width="40" alt="Energy" /><span>Energy</span></a></li>
+					<li class="rightI"><a href="../../industry/engineering-construction/index.html" title="Engineering &amp; Construction"><img src="../../images/industryExpertise/construction.svg" width="40" alt="Engineering &amp; Construction" /><span>Engineering &amp; Construction</span></a></li>
+					<li class="leftI"><a href="../../industry/healthcare/index.html" title="Healthcare"><img src="../../images/industryExpertise/healthcare.svg" width="40" alt="Healthcare" /><span>Healthcare</span></a></li>
+					<li class="rightI"><a href="../../industry/lifesciences/index.html" title="LifeSciences"><img src="../../images/industryExpertise/life-science.svg" width="40" alt="Life Sciences" /><span>Life Sciences</span></a></li>
+					<li class="leftI"><a href="../../industry/logistics-transportation/index.html" title="Logistics & Transportation"><img src="../../images/industryExpertise/logistics-and-distribution.svg" width="40" alt="Logistics & Transportation" /><span>Logistics & Transportation</span></a></li>
+					<li class="rightI"><a href="../../industry/manufacturing/index.html" title="Manufacturing"><img src="../../images/industryExpertise/manufacturing.svg" width="40" alt="Manufacturing" /><span>Manufacturing</span></a></li>  
+					<li class="leftI"><a href="../../industry/retail/index.html" title="Retail"><img src="../../images/industryExpertise/retail.svg" width="40" alt="Retail" /><span>Retail</span></a></li>  
+					<li class="rightI"><a href="../../industry/technology/index.html" title="Technology"><img src="../../images/industryExpertise/technology.svg" width="40" alt="Technology" /><span>Technology</span></a></li>
+				  </ul>
+				</div>
+            </div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn ByIndustryIndustry_Expertise">
+              <h2 class="MenuColumnTitle">Segments</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">
+					<li><a href="../../industry/segments/benefits-administration.html" title="Benefits Administration"><img src="../../images/industryExpertise/benefits-administration.svg" width="40" alt="Benefits Administration" /><span>Benefits Administration</span></a></li>
+					<li><a href="../../industry/segments/cards-payments-transfers.html" title="Cards, Payments & Transfers"><img src="../../images/industryExpertise/cards-payments-transfers.svg" width="40" alt="Cards, Payments & Transfers" /><span>Cards, Payments & Transfers</span></a></li>
+					<li><a href="../../industry/segments/health-fitness-leisure-clubs.html" title="Health, Fitness & Leisure"><img src="../../images/industryExpertise/health-fitness-leisure.svg" width="40" alt="Health, Fitness & Leisure" /><span>Health, Fitness & Leisure</span></a></li>
+					  <li><a href="../../industry/lifesciences/medical-devices.html" title="Medical Devices"><img src="../../images/industryExpertise/medical-devices.svg" width="40" alt="Medical Devices" /><span>Medical Devices</span></a></li>				
+				  </ul>
+				</div>
+            </div>
+          </div>
+          <!-- MenuCenterOuter --> 
+        </div>
+      </div>
+    </div>
+  </li>
+  <li data-main-nav="company" class="Company dropdown"><a href="../../company/index.html" title="Company" class="blueTheme">Company</a>
+    <div class="dropdown-menu Company">
+      <div class="container">
+        <div class="row">
+          <div class="MenuCenterOuter">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn overView ThirdBox Company_Overview">
+              <h2 class="MenuColumnTitle">Overview</h2>
+				<div class="closeableBoxMobile" data-view="open">
+					<div class="menuImageBox">
+						<a class="gradientButton" href="../../company/index.html" title="Learn More">Learn More</a>
+						<a href="../../company/index.html" title="Learn More"><img src="../../images/themeImages/company-s-banner.jpg" alt="Company Overview" /></a>
+					</div>
+					<p>Bhavath is a cloud-first technology services company, focused on enabling digital business transformation initiatives in infrastructure modernization, software driven business, intelligent analytics, IoT connected enterprise, and digital workplace productivity.</p>	
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn ThirdBox MB30 Company_News">
+              <h2 class="MenuColumnTitle">Latest News</h2>
+                <div class="closeableBoxMobile">						
+					<div class="loadNews" data-news-wp-id="1886" data-url="../../company/about/news/index.html"></div>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn Company_Resources">
+              <h2 class="MenuColumnTitle">Success Stories</h2>
+				<div class="closeableBoxMobile">					
+					<div class="loadSs" data-ss-wp-id="5229" data-url="../../company/resources/success-stories/index.html" ></div>
+				</div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 tabColumn FirstBox Company_About">
+              <h2 class="MenuColumnTitle">About</h2>
+				<div class="closeableBoxMobile">
+				  <ul class="D-ul">  
+					<li><a href="../../company/about/our-team.html" title="Our Team">Our Team</a></li>
+					<li><a href="../../company/about/news/index.html" title="News & Events">News & Events</a></li>
+					<li><a href="../../company/about/partners.html" title="Partners">Partners</a></li>
+					<li><a href="../../company/about/certifications.html" title="Certifications">Certifications</a></li>
+					<li><a href="../../company/about/careers-usa.html" title="Careers">Careers</a></li>
+					<li><a href="../../company/about/locations.html" title="Locations">Locations</a></li>
+				  </ul>
+				</div>
+            </div>
+            
+          </div>
+          <!-- MenuCenterOuter --> 
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>			</nav>
+		  </div>
+		</div>
+	</div>
+	<div class="closeArea"></div>
+</div>
+</header>
+<div class="ThroughtOuter">
+	<main id="MainSection" class="IoTTheme">
+		<section class="  PageIntro" id="introSection">
+			<div class="container">
+				<div class="row SectionPadding">
+					<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-gutter PageIntro">
+							<div class="myIconTitle">
+								<img src="../../images/section-icons/v25/control-systems-services-solutions.svg" alt="PLC Programming Company" width="60"/>
+								<h1 class="title">Control Systems Services and Solutions</h1>
+							</div>
+							
+							<p>We help manufacturing companies and technology providers innovate and embrace digital manufacturing by interfacing shop floor level PLC and Control systems to IoT sensors and devices, data analytics and the cloud. We can bridge the gap between legacy manufacturing platforms and IoT by working with proprietary protocols, standards and 3rd party technologies. For example, this involves building solutions and capabilities that can fix issues, simulate programs, modify PLC code or undertake virtual commissioning from a remote location instead of being physically present on the shop floor.</p>
+							
+							<p>With core skills in control and automation software design, development, implementation and commissioning, our Control systems experts can help make jargons like Smart Manufacturing and Industry 4.0 a reality with end to end skill sets and domain expertise.</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="WhiteRow SectionPaddingTop borderBottom" id="Expertise4Boxes">
+			<div class="ExpertiseBannerSection" style="margin-bottom:0px">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 MB30 sectionIntro">
+							<h2 class="MB20">Control Systems Experience</h2>		
+							<p>Our Control systems experts can help select and implement the right programming standards and coding techniques to ensure reduced complexity, optimal performance, easy integration, and greater expandability. </p>
+						</div>	
+					</div>
+					<div class="row MB20">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bulletBox">
+							<img src="../../images/expertise/v25/data-acquisition-for-iot.svg" width="60" alt="Data Acquisition for IoT" />
+							<p>Data Acquisition for IoT</p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bulletBox">
+							<img src="../../images/expertise/v25/legacy-to-iot-connectivity.svg" width="60" alt="Legacy to IoT Connectivity" />
+							<p>Legacy to IoT Connectivity</p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bulletBox">
+							<img src="../../images/expertise/v25/industrial-iot-to-cloud-connectivity.svg" width="60" alt="Industrial IoT to Cloud Connectivity" />
+							<p>Industrial IoT to Cloud Connectivity</p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bulletBox">
+							<img src="../../images/expertise/v25/next-gen-plc-programming.svg" width="60" alt="Next—Gen PLC Programming" />
+							<p>Next—Gen PLC Programming</p>
+						</div>
+					</div>
+					<div class="col-xs-12 nextButtonBox TechM MT20">
+						<a href="#" data-next-section="Technology">Learn more about our Technology Expertise</a>
+						<a href="#" data-next-section="Technology" class="moveArrow"><img src="../../images/down-arrow.svg" width="25" alt="Remote PLC Programming" /></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="WhiteRow SectionPaddingTop borderBottom hidden-xs" id="Technology">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 MB30 sectionIntro">
+						<h2 class="MB20">Technology Expertise</h2>	
+						<p>Bhavath cloud-first technology services for IoT help manufacturers build modernize and upgrade their shop floors to the Cloud and IoT environments for improved outcomes and efficiency.</p>
+					</div>			
+				</div>	
+				<div class="row">
+					<div class="col-lg-12">
+						<div id="BhavathCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators hidden-xs">
+								<li data-target="#BhavathCarousel" data-slide-to="0" class="active">Cloud / IoT Platforms</li>
+								<li data-target="#BhavathCarousel" data-slide-to="1">Software Programming</li>
+								<li data-target="#BhavathCarousel" data-slide-to="2">PLC Programming</li>
+								<li data-target="#BhavathCarousel" data-slide-to="3">Mobile App Platforms</li>
+								<li data-target="#BhavathCarousel" data-slide-to="4">Communication Interfaces</li>
+								<li data-target="#BhavathCarousel" data-slide-to="5">Protocol Implementations</li>					
+							</ol>
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<ul class="D-ul platforms">
+										<li><div class="myIcon"><img src="../../images/technology/azure-paas.svg" alt="Azure PaaS" /></div><span>Azure PaaS</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/azure-eventhub.svg" alt="Azure Event Hubs" /></div><span>Azure Event Hubs</span></li>				
+										<li><div class="myIcon"><img src="../../images/technology/azure-iot-suite.svg" alt="Azure IoT Suite" /></div><span>Azure IoT Suite</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/azure-stream-analytics.svg" alt="Azure Streaming Analytics" /></div><span>Azure Streaming Analytics</span></li>
+									</ul>
+								</div>								
+								<div class="item">
+									<ul class="D-ul platforms digital-platforms">
+										<li><div class="myIcon"><img src="../../images/technology/net-development.svg" alt="Microsoft.NET" /></div><span>Microsoft.NET</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/java.svg" alt="Java" /></div><span>Java</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/c.svg" alt="c" /></div><span>C</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/c-plus-plus.svg" alt="C++" /></div><span>C++</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/python.svg" alt="Python" /></div><span>Python</span></li>
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="D-ul platforms">
+										
+										<li><div class="myIcon"><img src="../../images/technology/ladder-logic.svg" alt="Ladder Logic" /></div><span>Ladder Logic</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/state-logic.svg" alt="State Logic" /></div><span>State Logic</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/symbolic-code.svg" alt="Symbolic Code" /></div><span>Symbolic Code</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/function-block.svg" alt="Function Block" /></div><span>Function Block</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/structured-text.svg" alt="Structured Text" /></div><span>Structured Text</span></li>
+								  </ul>
+								</div>
+								<div class="item">
+									<ul class="D-ul platforms">
+										<li><div class="myIcon"><img src="../../images/technology/android.svg" alt="Android" /></div><span>Android</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/ios.svg" alt="iOS" /></div><span>iOS</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/xamarin.svg" alt="Xamarin" /></div><span>Xamarin</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/ionic.svg" alt="Ionic" /></div><span>Ionic</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/phonegap.svg" alt="PhoneGap" /></div><span>PhoneGap</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/titanium.svg" alt="Titanium" /></div><span>Titanium</span></li>
+										
+									</ul>
+								</div>
+								<div class="item">
+									<ul class="D-ul platforms">
+										<li><div class="myIcon"><img src="../../images/technology/odata.svg" alt="OData" /></div><span>OData</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/xml.svg" alt="File Transfer (XML, Text)" /></div><span>File Transfer (XML, Text)</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/opc.svg" alt="OPC (Kepware)" /></div><span>OPC (Kepware)</span></li>
+									</ul>
+								</div>
+								
+								<div class="item">
+									<ul class="D-ul platforms next-gen-platforms ">
+										<li><div class="myIcon"><img src="../../images/technology/mqtt.svg" alt="MQTT" /></div><span>MQTT</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/sercos.svg" alt="SERCOS" /></div><span>SERCOS</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/profibus.svg" alt="Profibus" /></div><span>Profibus</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/devicenet.svg" alt="DeviceNet" /></div><span>DeviceNet</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/canbus.svg" alt="CANbus" /></div><span>CANbus</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/serocos-iii.svg" alt="SERCOS III" /></div><span>SERCOS III</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/profinet.svg" alt="Profinet" /></div><span>Profinet</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/ethernet-ip.svg" alt="Ethernet/IP" /></div><span>Ethernet/IP</span></li>
+										<li><div class="myIcon"><img src="../../images/technology/ethercat.svg" alt="EtherCAT" /></div><span>EtherCAT</span></li>
+									</ul>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 nextButtonBox">
+					<a href="#" data-next-section="WhyWorkWithUs">Learn why you should partner with us</a>
+					<a href="#" data-next-section="WhyWorkWithUs" class="moveArrow"><img src="../../images/down-arrow.svg" width="25" alt="Control Systems Software Services" /></a>
+				</div>
+			</div>	
+		</section>	
+		
+		<section class="WhiteRow SectionPaddingTop borderBottom hidden-sm hidden-md hidden-lg" id="TechnologyMobile">		
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1 sectionIntro MB30">
+						<h2 class="MB20">Technology Expertise</h2>	
+						<p>Bhavath cloud-first technology services for IoT help manufacturers build modernize and upgrade their shop floors to the Cloud and IoT environments for improved outcomes and efficiency.</p>
+					</div>			
+				</div>	
+				<div class="row">
+					<div class="col-lg-12">						
+						<h3>Cloud / IoT Platforms</h3>					
+						<div class="D-ul platforms">
+							<div id="BhavathCarouselM1" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner" role="listbox">							
+									<div class="item active">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/azure-paas.svg" alt="Azure PaaS" /></div><span>Azure PaaS</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/azure-eventhub.svg" alt="Azure Event Hubs" /></div><span>Azure Event Hubs</span></div>	
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/azure-iot-suite.svg" alt="Azure IoT Suite" /></div><span>Azure IoT Suite</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/azure-stream-analytics.svg" alt="Azure Streaming Analytics" /></div><span>Azure Streaming Analytics</span></div>				
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h3>Software Programming</h3>
+						<div class="D-ul platforms">
+							<div id="BhavathCarouselM2" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner" role="listbox">							
+									<div class="item active">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/net-development.svg" alt="Microsoft.NET" /></div><span>Microsoft.NET</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/java.svg" alt="Java" /></div><span>Java</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/c.svg" alt="c" /></div><span>C</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/c-plus-plus.svg" alt="C++" /></div><span>C++</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/python.svg" alt="Python" /></div><span>Python</span></div>	
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h3>PLC Programming</h3>
+						<div class="D-ul platforms">
+							<div id="BhavathCarouselM3" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner" role="listbox">							
+									<div class="item active">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/ladder-logic.svg" alt="Ladder Logic" /></div><span>Ladder Logic</span></div>
+									</div>									
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/state-logic.svg" alt="State Logic" /></div><span>State Logic</span></div>
+									</div>									
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/symbolic-code.svg" alt="Symbolic Code" /></div><span>Symbolic Code</span></div>
+									</div>									
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/function-block.svg" alt="Function Block" /></div><span>Function Block</span></div>
+									</div>									
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/structured-text.svg" alt="Structured Text" /></div><span>Structured Text</span></div>
+									</div>									
+								</div>
+							</div>
+						</div>
+
+						<h3>Mobile App Platforms</h3>
+						<div class="D-ul platforms">
+							<div id="BhavathCarouselM5" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner" role="listbox">							
+									<div class="item active">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/android.svg" alt="Android" /></div><span>Android</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/ios.svg" alt="iOS" /></div><span>iOS</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/xamarin.svg" alt="Xamarin" /></div><span>Xamarin</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/ionic.svg" alt="Ionic" /></div><span>Ionic</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/phonegap.svg" alt="PhoneGap" /></div><span>PhoneGap</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/titanium.svg" alt="Titanium" /></div><span>Titanium</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<h3>Communication Interfaces</h3>
+						<div class="D-ul platforms next-gen-platforms ">
+							<div id="BhavathCarouselM6" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner" role="listbox">							
+									<div class="item active">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/odata.svg" alt="OData" /></div><span>OData</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/xml.svg" alt="File Transfer (XML, Text)" /></div><span>File Transfer (XML, Text)</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/opc.svg" alt="OPC (Kepware)" /></div><span>OPC (Kepware)</span></div>
+									</div>									
+								</div>
+							</div>
+						</div>	
+						
+						<h3>Protocol Implementations</h3>
+						<div class="D-ul platforms next-gen-platforms ">
+							<div id="BhavathCarouselM7" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner" role="listbox">							
+									<div class="item active">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/mqtt.svg" alt="MQTT" /></div><span>MQTT</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/sercos.svg" alt="SERCOS" /></div><span>SERCOS</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/profibus.svg" alt="Profibus" /></div><span>Profibus</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/devicenet.svg" alt="DeviceNet" /></div><span>DeviceNet</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/canbus.svg" alt="CANbus" /></div><span>CANbus</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/serocos-iii.svg" alt="SERCOS III" /></div><span>SERCOS III</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/profinet.svg" alt="Profinet" /></div><span>Profinet</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/ethernet-ip.svg" alt="Ethernet/IP" /></div><span>Ethernet/IP</span></div>
+									</div>
+									<div class="item">
+										<div class="li"><div class="myIcon"><img src="../../images/technology/ethercat.svg" alt="EtherCAT" /></div><span>EtherCAT</span></div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="col-xs-12 nextButtonBox">
+					<a href="#" data-next-section="WhyWorkWithUs">Learn why you should partner with us</a>
+					<a href="#" data-next-section="WhyWorkWithUs" class="moveArrow"><img src="../../images/down-arrow.svg" width="25" alt="PLC Programming Company" /></a>
+				</div>
+			</div>	
+		</section>	
+		
+		<section class="WiteRow SectionPaddingTop" id="WhyWorkWithUs">
+			<div id="bannerSection" style="margin-bottom:0px">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<h2 class="MB20">Why Work With Us</h2>														
+						</div>	
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bulletBox">
+							<img src="../../images/why-work-with-us/v25/deep-financial-services-industry-experience.svg" width="60" alt="IoT Control Systems Development" />
+							<p>Deep technology expertise & proven experience meeting complex requirements for industrial automation software development & implementation</p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bulletBox">
+							<img src="../../images/why-work-with-us/v25/proven-experience-in-helping-businesses-adopt.svg" width="60" alt="Remote PLC Programming" />
+							<p>Proven experience in helping manufacturing businesses adopt digital transformation technologies</p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bulletBox">
+							<img src="../../images/why-work-with-us/v25/expertise-experience-across-application-development.svg" width="60" alt="Industrial IoT Services" />
+							<p>Expertise & experience across IoT, application development, cloud, data, and analytics</p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bulletBox">
+							<img src="../../images/why-work-with-us/v25/save-through-cost-effective-global-delivery-model.svg" width="60" alt="Control Systems Software Services" />
+							<p>Save through Cost Effective Global Delivery Model</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		</main>
+	</div> <!--ThroughtOuter-->
+
+<footer id="FooterSection" class="SlidePanel" data-section-name="Footer">
+
+			<div class="CopyRight">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="CopyRightInner">
+					<div class="CopyRightRow">
+						<div class="col-lg-3 col-md-12 col-sm-12 CopyRightBox SwapCRB">
+							<p>Copyright © 2018 Bhavath Solutions Private Limited </p>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 FooterNavigationBox">
+							<ul>
+								<li><a href="../../company/about/locations.html">Locations</a></li>
+								<li><a href="../../company/about/careers-usa.html">Careers</a></li>
+								<li><a href="../../sitemap.html">Sitemap</a></li>
+								<li class="hidden-xs"><a href="../../terms-of-use.html">Terms of Use</a></li>
+								<li  class="hidden-xs"><a href="../../disclaimer.html">Disclaimer</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-12 col-sm-12 SocialMediaBox SwapSMB">
+							<ul>
+								<li><a target="_blank" href="https://www.inc.com/profile/Bhavath-technologies"><img src="../../images/inc-5000-footer.png" alt="INC 5000" /></a></li>
+								<li class="Facebook"><a target="_blank" href="https://www.facebook.com/Bhavathtech/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+								<li class="Twitter"><a target="_blank" href="https://twitter.com/Bhavathtech"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+								<li class="Linkedin"><a target="_blank" href="https://www.linkedin.com/company/Bhavath"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>	
+								
+								<li class="Gplus"><a target="_blank" href="https://plus.google.com/+Bhavath"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript">
+function is_touch_device() {
+	var isIE10 = false;
+	var usa = navigator.userAgent;
+    /*@cc_on
+        if (/^10/.test(@_jscript_version)) {
+            isIE10 = true;
+        }
+    @*/
+
+	if(isIE10 && usa.search('Touch') < 0){
+		return false;
+	}
+
+	return !!('ontouchstart' in window) || !!('onmsgesturechange' in window);
+}
+if(is_touch_device()){
+	$('.tile').each(function(index, element) {
+		var link_to = $(this).find('.black-hover a').attr('href');
+		$(this).find('.black-hover').remove();
+		$(this).wrap('<a href="'+link_to+'" />');
+	});
+}
+</script> 
+
+ <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+
+  </script>
+  	<link href="../../css/print.css" type="text/css" rel="stylesheet" />
+<!-- ParDot Tracking Code--> 
+<script type="text/javascript">
+piAId = '42672';
+piCId = '3186';
+
+(function() {
+function async_load(){
+var s = document.createElement('script'); s.type = 'text/javascript';
+s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+}
+if(window.attachEvent) { window.attachEvent('onload', async_load); }
+else { window.addEventListener('load', async_load, false); }
+})();
+</script> 
+<!-- Google Code for Remarketing Tag --> 
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1071196832;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script> 
+<script type="text/javascript" src="../../../www.googleadservices.com/pagead/f.txt">
+</script>
+<noscript>
+<div style="display:inline;"> <img height="1" width="1" style="border-style:none;" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1071196832/?value=0&amp;guid=ON&amp;script=0"/> </div>
+</noscript>
+
+</body>
+
+<!-- Mirrored from www.Bhavath.com/iot/technology/control-systems-plc-programming.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 31 Jan 2018 12:57:18 GMT -->
+</html>

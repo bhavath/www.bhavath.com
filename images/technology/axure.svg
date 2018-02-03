@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #006faf;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #006faf;
+      }
+    </style>
+  </defs>
+  <title>axure</title>
+  <circle class="cls-1" cx="37" cy="37" r="36"/>
+  <g>
+    <rect class="cls-2" x="20.53" y="20.45" width="32.97" height="6.12"/>
+    <rect class="cls-2" x="20.5" y="30.32" width="9.71" height="23.23"/>
+    <rect class="cls-2" x="33.76" y="30.32" width="19.74" height="23.23"/>
+  </g>
+</svg>

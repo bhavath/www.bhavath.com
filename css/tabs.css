@@ -1,0 +1,169 @@
+
+@media (min-width: 1200px){
+.NavigationWrap li:hover .dropdown-menu, li.Company:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+}
+
+#ListBox .resp-tabs-list li {
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  padding: 13px 15px;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+  float: left;
+}
+
+#ListBox .resp-tabs-container {
+  padding: 0px;
+  background-color: #fff;
+  clear: left;
+}
+
+
+.resp-tab-content {
+  display: none;
+  padding: 0px 0px 0;
+}
+
+.resp-content-active,
+.resp-accordion-active { display: block; }
+
+.resp-tab-content { border: 1px solid #c1c1c1; }
+
+h2.resp-accordion {
+  border-top: 1px solid #c1c1c1;
+  margin: 0px;
+  padding: 20px 15px;
+   background: url("../images/SoftwareTheme/plus.svg") no-repeat 98% center !important;
+	background-size: 25px !important;
+   -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 0px !important;
+}
+
+h2.resp-tab-active  {
+  background-image: url("../images/SoftwareTheme/minus.svg") !important;
+	background-size: 25px !important;
+  margin-bottom: -1px !important;
+}
+
+
+h2.resp-tab-title:last-child {
+  border-bottom: 12px solid #c1c1c1 !important;
+  background: blue;
+}
+
+/*-----------Vertical tabs-----------*/
+
+.resp-vtabs .ListBox {
+  float: left;
+  width: 30%;
+  margin-right: 8%;
+
+}
+
+.resp-vtabs .resp-tabs-list li {
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  float: none;
+  padding: 20px 20px 20px 40px !important;
+  min-height: 64px;
+}
+
+.resp-vtabs .resp-tabs-container {
+  padding: 0px;
+  background-color: #fff;
+  float: right;
+  width: 60%;
+  min-height: 250px;
+  clear: none;
+
+}
+
+.resp-vtabs .resp-tab-content { border: none; }
+
+.resp-vtabs li.resp-tab-active {
+  background: #305476 url("../images/experties-arrow.png") no-repeat 95% center;
+  background-size:20px;
+  border-right: none;
+  color: #fff;
+  position: relative;
+  border: 0px;
+  z-index: 99
+}
+.BlueBG {display: none; width: 0px; height: 0px;}
+.resp-vtabs li.resp-tab-active .BlueBG {
+   background: #305476;
+   height: 100%;
+   position: absolute;
+   left: -999%;
+   width: 1000%;
+   top:0;
+   z-index: -1;
+   display: block;
+ }
+.resp-arrow {
+  width: 0;
+  height: 0;
+  float: right;
+  margin-top: 3px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid #c1c1c1;
+}
+
+
+/*-----------Accordion styles-----------*/
+
+.resp-easy-accordion .resp-tab-content { border: 1px solid #c1c1c1; }
+
+.resp-easy-accordion .resp-tab-content:last-child { border-bottom: 1px solid #c1c1c1 !important; }
+
+.resp-jfit {
+  width: 100%;
+  margin: 0px;
+}
+
+.resp-tab-content-active { display: block; }
+
+h2.resp-accordion:first-child { border-top: 1px solid #c1c1c1 !important; }
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+	
+
+@media only screen and (max-width: 991px) {
+
+ul.resp-tabs-list { display: none; }
+
+h2.resp-accordion { display: block; }
+
+.resp-vtabs .resp-tab-content { padding: 15px ; }
+
+.resp-vtabs .resp-tabs-container {
+  border: none;
+  float: none;
+  width: 100%;
+  min-height: initial;
+  clear: none;
+}
+.resp-accordion-closed { display: none !important; }
+
+.resp-vtabs .resp-tab-content:last-child { border-bottom: 1px solid #c1c1c1 !important; }
+}
+
+
+
+
+
+
+
+

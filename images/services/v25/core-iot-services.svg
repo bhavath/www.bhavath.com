@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#006FAF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#006FAF;}
+	.st2{fill:none;stroke:#006FAF;stroke-width:1.5;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#006FAF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st4{fill:#006FAF;stroke:#006FAF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#006FAF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#006FAF;stroke-miterlimit:10;}
+	.st7{fill:#006FAF;stroke:#006FAF;stroke-width:0.25;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#006FAF;stroke-width:0.25;stroke-miterlimit:10;}
+</style>
+<g id="iot-connected-platform-deployment">
+	<g id="Layer_13">
+	</g>
+</g>
+<g id="core-iot-services">
+	<circle class="st0" cx="36.7" cy="37" r="36"/>
+	<g>
+		<path class="st2" d="M42.4,30.7H31c-0.3,0-0.6,0.2-0.6,0.6v11.5c0,0.3,0.2,0.6,0.6,0.6h11.5c0.3,0,0.6-0.2,0.6-0.6V31.3
+			C43,31,42.8,30.7,42.4,30.7z"/>
+		<path class="st1" d="M55.2,32.4v-1.7h-5v-5.5c0-1-0.7-1.7-1.7-1.7H43v-5h-1.7v5h-3.8v-5h-1.7v5H32v-5h-1.7v5h-5.4
+			c-1,0-1.7,0.7-1.7,1.7v5.5h-5v1.7h5v3.8h-5v1.7h5v3.8h-5v1.7h5v5.4c0,1,0.7,1.7,1.7,1.7h5.5v5h1.7v-5h3.8v5h1.7v-5h3.8v5h1.7v-5
+			h5.4c1,0,1.7-0.7,1.7-1.7v-5.5h5v-1.7h-5v-3.8h5v-1.7h-5v-3.8h5V32.4z M47.9,48.8H25.5c-0.3,0-0.6-0.2-0.6-0.6V25.8
+			c0-0.3,0.2-0.6,0.6-0.6h22.4c0.3,0,0.6,0.2,0.6,0.6v22.4C48.5,48.5,48.2,48.8,47.9,48.8z"/>
+	</g>
+</g>
+<g id="Application-and-business-logic">
+</g>
+<g id="Device-connectivity-and-_security">
+</g>
+<g id="Device-management">
+</g>
+<g id="User-management">
+</g>
+<g id="Connected-products_1_">
+</g>
+<g id="Connected-systems_1_">
+</g>
+<g id="Data-driven-connected-business_1_">
+</g>
+<g id="Azure-iot-hub_1_">
+</g>
+<g id="Expertise-and-experience_1_">
+</g>
+<g id="Domain-and-_subject">
+</g>
+</svg>

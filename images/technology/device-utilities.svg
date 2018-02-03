@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#006FAF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#006FAF;stroke-width:1.5;stroke-miterlimit:10;}
+	.st2{fill:#006FAF;}
+</style>
+<title>os-patch-management</title>
+<g id="text">
+</g>
+<g>
+	<circle class="st0" cx="37" cy="37" r="36"/>
+	<g>
+		<g>
+			<g>
+				<path class="st1" d="M18.4,31.7v-11c0-0.4,0.1-0.7,0.4-1s0.6-0.4,1-0.4h17.8c0.4,0,0.7,0.1,1,0.4s0.4,0.6,0.4,1v11"/>
+				<polyline class="st1" points="33.5,31 36.2,31 36.2,22.1 21.1,22.1 21.1,31 23.9,31 				"/>
+				<path class="st1" d="M40.3,35.1c0,0.4-0.1,0.7-0.4,1c-0.3,0.3-0.6,0.4-1,0.4H18.4c-0.4,0-0.7-0.1-1-0.4c-0.3-0.3-0.4-0.6-0.4-1
+					v-1.4h23.3V35.1z"/>
+				<g>
+					<line class="st1" x1="25.3" y1="31" x2="26.6" y2="31"/>
+					<line class="st1" x1="28" y1="31" x2="29.4" y2="31"/>
+					<line class="st1" x1="30.7" y1="31" x2="32.1" y2="31"/>
+				</g>
+			</g>
+			<g>
+				<line class="st1" x1="47.9" y1="26.2" x2="41" y2="26.2"/>
+				<line class="st1" x1="52" y1="37.2" x2="52" y2="30.3"/>
+				<circle class="st1" cx="52" cy="26.2" r="2.1"/>
+			</g>
+			<g>
+				<line class="st1" x1="24.6" y1="38.5" x2="24.6" y2="45.4"/>
+				<circle class="st1" cx="24.6" cy="49.5" r="2.1"/>
+				<line class="st1" x1="28.7" y1="49.5" x2="44.8" y2="49.5"/>
+			</g>
+		</g>
+		<g>
+			<path class="st2" d="M56.7,39.1c-0.2-0.2-0.5-0.3-0.7-0.3h-8c-0.3,0-0.5,0.1-0.7,0.3S47,39.6,47,39.8v13.8c0,0.3,0.1,0.5,0.3,0.7
+				s0.5,0.3,0.7,0.3h8c0.3,0,0.5-0.1,0.7-0.3s0.3-0.5,0.3-0.7V39.8C57,39.6,56.9,39.3,56.7,39.1z M55.5,53.2h-7v-2.4h7V53.2z
+				 M55.5,49.3h-7v-9h7V49.3z"/>
+			<rect x="51.2" y="51.3" class="st2" width="1.5" height="1.5"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,80 @@
+
+
+@-webkit-keyframes change {
+	0%, 7%, 100%{transform:translateY(0);}
+	9%,16% {transform:translateY(-20%);}
+	18%,32% {transform:translateY(-40%);}
+	33%,47% {transform:translateY(-60%);}
+	48%,62% {transform:translateY(-80%);}
+	63%,72% {transform:translateY(-60%);}
+	73%,87% {transform:translateY(-40%);}
+	88%,97% {transform:translateY(-20%);}
+
+}
+
+@keyframes change {
+  	0%, 7%, 100%{transform:translateY(0);}
+	9%,16% {transform:translateY(-20%);}
+	18%,32% {transform:translateY(-40%);}
+	33%,47% {transform:translateY(-60%);}
+	48%,62% {transform:translateY(-80%);}
+	63%,72% {transform:translateY(-60%);}
+	73%,87% {transform:translateY(-40%);}
+	88%,97% {transform:translateY(-20%);}
+	
+
+}
+
+
+
+/* Scroll down icon */
+@-webkit-keyframes scroll-down-anim {
+  0% {
+    bottom: 12px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 12px;
+  }
+}
+@-moz-keyframes scroll-down-anim {
+  0% {
+    bottom: -8px;
+  }
+  50% {
+    bottom: 3px;
+  }
+  100% {
+    bottom: -8px;
+  }
+}
+@-o-keyframes scroll-down-anim {
+  0% {
+    bottom: -8px;
+  }
+  50% {
+    bottom: 3px;
+  }
+  100% {
+    bottom: -8px;
+  }
+}
+@keyframes scroll-down-anim {
+  0% {
+    bottom: -8px;
+  }
+  50% {
+    bottom: 3px;
+  }
+  100% {
+    bottom: -8px;
+  }
+}
+
+@-webkit-keyframes h{
+	0%{
+		-webkit-transform:translate(0);
+		transform:translate(0)}50%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{-webkit-transform:translate(0);transform:translate(0)}}
+	@keyframes h{0%{-webkit-transform:translate(0);transform:translate(0)}50%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{-webkit-transform:translate(0);transform:translate(0)}}

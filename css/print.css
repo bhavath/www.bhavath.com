@@ -1,0 +1,316 @@
+
+#PrintFooter p{
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		font-size: 1em;}
+#PrintFooter ul{
+		list-style: disc;
+		padding: 0px;
+		margin: 0px;
+		text-align: center;}
+#PrintFooter li{
+			display: inline-block;
+			text-align: left;
+			padding-left: 40px;
+			font-size: 1em !important;}
+#PrintFooter li:before{
+			content: "\2022";
+			font-size: 30px;
+			vertical-align: middle;
+			padding-right: 10px;}
+
+@media print {
+  #SearchSection {
+    position: relative; }
+
+  .PageIntro {
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0; }
+
+  #HeaderSectionMobile {
+    display: none !important;
+    height: 0; }
+
+  thead {
+    display: table-header-group; }
+
+  tfoot {
+    display: table-footer-group; }
+
+  html {
+    margin: 0 !important;
+    padding: 0px !important;
+    border: 0px !important; }
+
+  body {
+    background-color: #ffffff !important;
+    margin: 0px 0 !important;
+    padding: 0 !important;
+    border: 0px !important; }
+
+  body * {
+    display: none; }
+
+  #PrintDownloadButtons {
+    display: none !important; }
+
+  .entry-meta {
+    display: none !important; }
+
+  #CreatePrintSection * {
+    display: block; }
+
+  #CreatePrintSection {
+    display: block;
+    margin: 0px auto !important;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    border: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1.8em !important; }
+
+  #PrintLogo {
+    position: relative;
+    background: #ffffff !important;
+    border-bottom: 2px solid #cccccc;
+    padding: 10px 0 10px 0 !important;
+    margin: 0px 0 20px 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    position: relative; }
+
+  ul {
+    margin-bottom: 30px !important;
+    list-style: disc !important;
+    padding-left: 50px; }
+    ul li {
+      padding: 6px 0; }
+    ul li:before {
+      content: "•";
+      font-size: 26px;
+      vertical-align: middle;
+      padding: 0 10px 0 0 !important;
+      margin: 0 0 0 -20px !important;
+      color: #777777 !important; }
+
+  #TitleSection {
+    clear: both;
+    width: 100%; }
+    #TitleSection h1.title p {
+      line-height: 1.1em !important;
+      font-size: 1em !important;
+      position: relative !important;
+      margin-bottom: 20px !important; }
+
+  h3.title {
+    padding: 0 !important;
+    line-height: 1em !important;
+    margin: 0 !important;
+    display: block;
+    overflow: hidden; }
+
+  .col-md-3.col-sm-3.col-xs-12 {
+    position: relative; }
+
+  section {
+    margin: 0 0 50px !important;
+    padding: 0 !important;
+    font-size: 0.6em;
+    line-height: 1.5em;
+    display: block;
+    overflow: hidden; }
+
+  #AboutClient .img-circle {
+    width: 120px;
+    padding: 0;
+    margin: 0;
+    height: auto !important; }
+
+  #BusinessChallenge {
+    padding: 0px; }
+
+  #Solution #WhiteBox {
+    background: #ffffff;
+    width: 100%;
+    margin: 0px auto; }
+  #Solution .PrintContentPart h3 {
+    font-size: 1.2em; }
+
+  #TechnologiesUsed .TechBoxe {
+    width: 49%;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    margin-bottom: 30px; }
+  #TechnologiesUsed .IconImage {
+    float: left;
+    width: 28%; }
+    #TechnologiesUsed .IconImage img {
+      width: 40px;
+      max-width: 100%; }
+  #TechnologiesUsed .TechDescription {
+    float: left;
+    width: 70%; }
+    #TechnologiesUsed .TechDescription h3 {
+      font-size: 1em;
+      padding: 0px !important;
+      margin: 0 !important; }
+    #TechnologiesUsed .TechDescription h4 {
+      font-size: 1.2em;
+      padding: 0px;
+      margin: 0px 0 10px 0 !important;
+      color: #006983;
+      font-weight: 500; }
+
+  #Benefits .BenefitsTitleBox {
+    margin-bottom: 0px;
+    clear: both;
+    float: none; }
+    #Benefits .BenefitsTitleBox h2.title p {
+      position: relative !important; }
+  #Benefits .BenefitsBox {
+    margin: 0px !important;
+    width: 100%; }
+  #Benefits .PrintContentPart h3 {
+    color: #006883;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0px 0 8px 0 !important; }
+
+  #PrintFooter {
+    width: 100%;
+    display: block;
+    background: #ffffff !important;
+    border-top: 2px solid #cccccc;
+    padding: 10px 0 10px 0 !important;
+    margin: 0 0 20px 0 !important; }
+    #PrintFooter p {
+      text-align: center;
+      padding: 0 !important;
+      margin: 0 !important;
+      font-size: 0.7em; }
+    #PrintFooter .CopyRightText {
+      font-size: 0.5em; }
+    #PrintFooter ul {
+      list-style: disc;
+      padding: 0px !important;
+      margin: 0px !important;
+      text-align: center; }
+      #PrintFooter ul li {
+        display: inline-block;
+        text-align: left;
+        padding: 0 0 0 10px;
+        margin: 0 !important;
+        font-size: 0.6em !important; }
+      #PrintFooter ul li:before {
+        content: "•";
+        font-size: 26px;
+        vertical-align: middle;
+        padding: 0 10px 0 0 !important;
+        margin: 0 !important;
+        color: #cccccc !important; }
+
+  .container {
+    width: 96% !important; }
+
+  .col-md-12 {
+    width: 100% !important; }
+
+  .col-md-11 {
+    width: 91.66667%; }
+
+  .col-md-10 {
+    width: 83.33333%; }
+
+  .col-md-9 {
+    width: 80%; }
+
+  .col-md-8 {
+    width: 66.66667%; }
+
+  .col-md-7 {
+    width: 58.33333%; }
+
+  .col-md-6 {
+    width: 50%; }
+
+  .col-md-5 {
+    width: 41.66667%; }
+
+  .col-md-4 {
+    width: 33.33333%; }
+
+  .col-md-3 {
+    width: 20%; }
+
+  .col-md-2 {
+    width: 16.66667%; }
+
+  .col-md-1 {
+    width: 8.33333%; } 
+/*added by Dhanaji*/	
+sup{
+	display:inline!important;
+	font-size:14px!important;
+	}
+em {
+	display:inline!important;
+	
+}
+strong {
+	display:inline!important;
+}
+ table {
+	margin-bottom:10px; 
+	clear:both!important;
+	width:100%!important;
+	
+ }
+ table tr{
+	 display: table-row!important;
+	 
+ }
+ table tr td,  table tr th {
+    line-height: 28px !important;
+    border: 1px solid #dddddd!important;
+    padding: 5px 10px!important;
+	display: table-cell!important; 
+    
+}
+/* put where fot size issue*/
+.BenefitsBox p, th {
+	  font-size: 18px !important; 
+	  line-height:1.5em !important;
+}
+.BenefitsBox  h3 { 
+	font-size: 24px!important;
+    text-transform: uppercase!important;
+}
+ol {
+    margin-bottom: 30px !important;
+    list-style: disc !important;
+    padding-left: 50px; }
+    ol li {
+      padding: 6px 0; }
+    ol li:before {
+      content: "•";
+      font-size: 26px;
+      vertical-align: middle;
+      padding: 0 10px 0 0 !important;
+      margin: 0 0 0 -20px !important;
+      color: #777777 !important; } 
+	  
+/* put where title breaks*/	  
+/*#SearchSection h2 font{	 
+	font-size:30px!important;
+}*/
+}
+
+	 

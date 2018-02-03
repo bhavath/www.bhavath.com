@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#006FAF;}
+</style>
+<title>os-patch-management</title>
+<g id="text">
+</g>
+<path class="st0" d="M37,74C16.6,74,0,57.4,0,37S16.6,0,37,0s37,16.6,37,37S57.4,74,37,74z M37,2C17.7,2,2,17.7,2,37s15.7,35,35,35
+	s35-15.7,35-35S56.3,2,37,2z"/>
+<g>
+	<g>
+		<polygon class="st0" points="44.5,37.6 37.1,41.5 29.7,37.3 37.1,33.2 		"/>
+		<polygon class="st0" points="37.7,50.9 37.7,42.7 45.1,38.3 45.1,46.9 		"/>
+		<polygon class="st0" points="36.3,50.9 36.3,42.7 28.9,38.3 28.9,46.9 		"/>
+		<rect x="36.7" y="22.6" class="st0" width="1" height="9.6"/>
+		<rect x="49.5" y="45" transform="matrix(0.5 -0.866 0.866 0.5 -18.1539 68.1792)" class="st0" width="1" height="9.6"/>
+		<rect x="19.2" y="49.4" transform="matrix(0.866 -0.5 0.5 0.866 -21.7138 18.67)" class="st0" width="9.6" height="1"/>
+	</g>
+	<path class="st0" d="M37.1,23c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S38.2,23,37.1,23z M37.1,19.8c-0.7,0-1.2,0.5-1.2,1.2
+		s0.5,1.2,1.2,1.2s1.2-0.5,1.2-1.2S37.7,19.8,37.1,19.8z"/>
+	<path class="st0" d="M55.5,55c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S56.6,55,55.5,55z M55.5,51.8c-0.7,0-1.2,0.5-1.2,1.2
+		s0.5,1.2,1.2,1.2s1.2-0.5,1.2-1.2S56.2,51.8,55.5,51.8z"/>
+	<path class="st0" d="M18.5,55c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S19.6,55,18.5,55z M18.5,51.8c-0.7,0-1.2,0.5-1.2,1.2
+		s0.5,1.2,1.2,1.2s1.2-0.5,1.2-1.2S19.2,51.8,18.5,51.8z"/>
+</g>
+</svg>

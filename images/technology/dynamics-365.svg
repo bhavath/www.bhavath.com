@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #006faf;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #006faf;
+      }
+    </style>
+  </defs>
+  <title>dynamic-365</title>
+  <circle class="cls-1" cx="37" cy="37" r="36"/>
+  <g>
+    <polygon class="cls-2" points="25 56.44 32.57 34.7 25 29.74 25 56.44"/>
+    <polygon class="cls-2" points="49 42.99 49 30.65 25.04 56.44 49 42.99"/>
+    <polygon class="cls-2" points="25 17.56 25 27.98 40.71 35.65 47.94 29.73 25 17.56"/>
+  </g>
+</svg>

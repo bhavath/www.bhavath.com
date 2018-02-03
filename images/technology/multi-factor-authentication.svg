@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#006FAF;}
+	.st1{fill:none;stroke:#006FAF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:none;stroke:#006FAF;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#006FAF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title>digital-transformation</title>
+<path class="st0" d="M37,74C16.6,74,0,57.4,0,37C0,16.6,16.6,0,37,0c20.4,0,37,16.6,37,37C74,57.4,57.4,74,37,74z M37,2
+	C17.7,2,2,17.7,2,37s15.7,35,35,35s35-15.7,35-35S56.3,2,37,2z"/>
+<g>
+	<circle id="_Path_" class="st1" cx="37" cy="37" r="17"/>
+	<circle id="_Path_2" class="st1" cx="37" cy="37" r="9.6"/>
+	<circle id="_Path_3" class="st2" cx="37" cy="23.7" r="0.7"/>
+	<circle id="_Path_4" class="st2" cx="37" cy="50.3" r="0.7"/>
+	
+		<ellipse id="_Path_5" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -11.4289 27.6047)" class="st2" cx="27.6" cy="27.6" rx="0.7" ry="0.7"/>
+	
+		<ellipse id="_Path_6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -19.2224 46.3965)" class="st2" cx="46.4" cy="46.4" rx="0.7" ry="0.7"/>
+	<circle id="_Path_7" class="st2" cx="23.7" cy="37" r="0.7"/>
+	
+		<ellipse id="_Path_8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -24.7215 33.1038)" class="st2" cx="27.6" cy="46.4" rx="0.7" ry="0.7"/>
+	<line id="_Path_9" class="st1" x1="43.8" y1="30.2" x2="49" y2="25"/>
+	<line id="_Path_10" class="st3" x1="37" y1="37" x2="51.8" y2="37"/>
+	<circle id="_Path_11" class="st1" cx="37" cy="37" r="5.2"/>
+</g>
+</svg>

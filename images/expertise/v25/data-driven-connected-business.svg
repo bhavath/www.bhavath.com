@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74 74" style="enable-background:new 0 0 74 74;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#006FAF;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:#006FAF;}
+</style>
+<g id="iot-connected-platform-deployment">
+	<g id="Layer_13">
+	</g>
+</g>
+<g id="core-iot-services">
+</g>
+<g id="Application-and-business-logic">
+</g>
+<g id="Device-connectivity-and-_security">
+</g>
+<g id="Device-management">
+</g>
+<g id="User-management">
+</g>
+<g id="Connected-products_1_">
+</g>
+<g id="Connected-systems_1_">
+</g>
+<circle class="st0" cx="37.1" cy="37" r="36"/>
+<g>
+	<rect x="30.8" y="24.9" class="st1" width="1" height="7.6"/>
+	<rect x="35.4" y="26.4" class="st1" width="1" height="6"/>
+	<rect x="42.4" y="26.4" class="st1" width="1" height="6"/>
+	<rect x="37.7" y="27.3" class="st1" width="1" height="5.2"/>
+	<rect x="40.1" y="26.6" class="st1" width="1" height="5.8"/>
+	<rect x="33.1" y="25.6" class="st1" width="1" height="6.7"/>
+	<rect x="30.5" y="33.1" class="st1" width="13.3" height="1"/>
+	<polygon class="st1" points="41.5,24.8 40.7,25.9 42,25.7 43.2,24 41.5,22.7 40.3,22.9 41.4,23.8 38.2,24.3 31.5,21.9 31.2,22.9 
+		38.2,25.3 	"/>
+	<path class="st1" d="M53.4,31.2c2.1,0,3.7-1.6,3.7-3.7c0-2.1-1.7-3.8-3.7-3.8c-2.1,0-3.7,1.6-3.7,3.7
+		C49.7,29.5,51.4,31.2,53.4,31.2z M53.4,29.2c-1,0-1.9-0.9-1.9-1.9c0-1,0.9-1.9,1.9-1.9c1,0,1.9,0.9,1.9,1.9
+		C55.3,28.3,54.4,29.2,53.4,29.2z"/>
+	<path class="st1" d="M58.6,32.5c-0.7-0.7-1.6-1.1-2.6-1.1h-5.3c-2,0-3.6,1.6-3.6,3.6v2.3c0,2,1.6,3.6,3.6,3.6h3.6V39h-3.6
+		c-0.9,0-1.7-0.7-1.7-1.7v-2.3c0-0.9,0.7-1.7,1.7-1.7h5.2c0.9,0,1.7,0.7,1.7,1.7v2.6h2v-2.6C59.5,34.1,59.2,33.2,58.6,32.5z"/>
+	<path class="st1" d="M47.2,45.5V52h1.9v-6.5c0-0.9,0.7-1.7,1.7-1.7h8.2V42h-8.2C48.9,42,47.2,43.6,47.2,45.5z"/>
+	<path class="st1" d="M20.8,31.2c2.1,0,3.7-1.6,3.7-3.7c0-2.1-1.7-3.8-3.7-3.8c-2,0-3.7,1.7-3.7,3.7c-0.1,1,0.3,2,1,2.7
+		C18.8,30.8,19.7,31.2,20.8,31.2z M20.8,25.5c1,0,1.9,0.9,1.9,1.9c0,1-0.9,1.9-1.9,1.9c-1,0-1.9-0.9-1.9-1.9
+		C18.9,26.3,19.8,25.5,20.8,25.5z"/>
+	<path class="st1" d="M16.4,35c0-0.9,0.7-1.7,1.7-1.7h5.2c0.9,0,1.7,0.7,1.7,1.7v2.3c0,0.9-0.7,1.7-1.7,1.7h-3.6v1.9h3.6
+		c2,0,3.6-1.6,3.6-3.6l0-2.2c0.1-0.9-0.2-1.7-0.8-2.4c-0.7-0.7-1.6-1.2-2.6-1.2h-5.3c-2,0-3.6,1.6-3.6,3.6v2.6h1.9V35z"/>
+	<path class="st1" d="M26,43.1c-0.7-0.7-1.6-1.1-2.6-1.1h-8.2v1.9h8.2c0.9,0,1.7,0.7,1.7,1.7V52h1.9l0-6.5
+		C26.9,44.6,26.6,43.8,26,43.1z"/>
+	<polygon class="st1" points="47.4,41 26.8,41 26.8,42.8 28.7,42.8 28.7,52.1 30.7,52.1 30.7,42.8 43.5,42.8 43.5,52.1 45.5,52.1 
+		45.5,42.8 47.4,42.8 	"/>
+</g>
+<g id="Azure-iot-hub_1_">
+</g>
+<g id="Expertise-and-experience_1_">
+</g>
+<g id="Domain-and-_subject">
+</g>
+</svg>
