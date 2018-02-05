@@ -1590,7 +1590,8 @@ iframe[name=google_conversion_frame]{
     width:40%
 }
 .ThroughtOuter{
-    background:#fff
+        background: #fff;
+
 }
 #HeaderSection{
     background:#000;
