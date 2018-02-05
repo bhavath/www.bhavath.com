@@ -1593,7 +1593,7 @@ iframe[name=google_conversion_frame]{
 
 }
 #HeaderSection{
-    background:#000;
+    background: #2e4647;
     border-bottom:solid 1px #fff;
 }
 .V2 .bodyFixedNav .ThroughtOuter{
@@ -3398,17 +3398,18 @@ a.download,a.download:hover{
 #FooterSection .Column2 li:first-child{
     padding-left:0
 }
-#FooterSection .CopyRight{
-    background:#000;
-    padding:0;
-    min-height:40px;
-    font-size:15px;
-    margin-top:0
+#FooterSection .CopyRight {
+    background: #2e4647;
+    padding: 0;
+    min-height: 40px;
+    font-size: 15px;
+    margin-top: 0;
 }
 #FooterSection .CopyRight a,#FooterSection .CopyRight p{
     padding:0;
     margin:0;
-    color:#818181
+    color:#fff;
+	
 }
 #FooterSection .CopyRight .CopyRightInner{
     display:table;
