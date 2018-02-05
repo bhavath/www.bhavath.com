@@ -80,11 +80,11 @@ table{
     border-spacing:0
 }
 body{
-    color:#333;
-    font-family:Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
-    line-height:28px;
-    font-size:16px;
-    font-weight:400
+   color: #333;
+font-family: "Roboto",sans-serif;
+line-height: 28px;
+font-size: 14px !important;
+font-weight: normal;
 }
 .addArrow:after,.gradientButton .addArrow:after,ul.bulletCircle li:before{
     font-family:FontAwesome
@@ -160,7 +160,7 @@ h1,h2,h3,h4,h5,h6,p{
 h1,h1.title,h2,h2.title{
     font-weight:300;
     text-transform:capitalize;
-    font-size:28px;
+    font-size:28px !important;
     line-height:30px
 }
 #ExpertiseBoxes h5.title,#ServicesBoxes h5.title,h5,h5.title{
@@ -170,17 +170,16 @@ h1 span,h1.title span,h2 span,h2.title span{
     font-weight:600
 }
 h3,h3.title{
-    font-size:24px;
-    line-height:27px;
-    font-weight:300;
-    margin-bottom:10px
+   line-height: 30px;
+font-size: 16px !important;
+font-weight: bold;
 }
 h4,h4.title{
     font-size:20px;
     line-height:35px
 }
 h5,h5.title,h6,h6.title{
-    font-size:18px;
+   font-size: 16px !important;
     line-height:32px
 }
 hr{
@@ -1768,7 +1767,7 @@ color: #fff !important;
 }
 #HeaderSection #MainNavigation .dropdown-menu .MenuColumnTitle,#HeaderSection .Company .dropdown-menu .MenuColumnTitle{
     color:#fff;
-    font-size:18px;
+    font-size:18px !important;
     text-transform:uppercase;
     font-weight:400;
     margin:0 0 15px;
@@ -1779,7 +1778,8 @@ color: #fff !important;
     line-height:24px
 }
 #HeaderSection #MainNavigation .dropdown-menu ul li a,#HeaderSection .Company .dropdown-menu ul li a{
-    color:#fff
+    color:#fff;
+	font-size:14px !important;
 }
 #HeaderSection #MainNavigation .dropdown-menu ul li a:hover,#HeaderSection .Company .dropdown-menu ul li a:hover{
     color:#fff!important
