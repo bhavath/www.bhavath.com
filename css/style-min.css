@@ -6290,15 +6290,7 @@ li.blueTheme .platforms a:hover span{
     .myContactBox iframe,.myMoreInfo iframe,.mySalesForm iframe{
         height:340px
     }
-    .v25 .sliderInnter{
-        padding:60px 30px;
-        top:50%;
-        -webkit-transform:translateY(-50%);
-        -moz-transform:translateY(-50%);
-        -ms-transform:translateY(-50%);
-        -o-transform:translateY(-50%);
-        transform:translateY(-50%)
-    }
+ 
     .v25 #firstSlide ul li p:before{
         height:18px
     }
@@ -6874,14 +6866,6 @@ li.blueTheme .platforms a:hover span{
     }
     .v25 .gradientButton{
         width:214px!important
-    }
-    .v25 .sliderInnter{
-        top:50%;
-        -webkit-transform:translateY(-50%);
-        -moz-transform:translateY(-50%);
-        -ms-transform:translateY(-50%);
-        -o-transform:translateY(-50%);
-        transform:translateY(-50%)
     }
     .v25 .sliderInnter h1{
         font-size:36px;
