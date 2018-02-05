@@ -2267,7 +2267,7 @@ a.download,a.download:hover{
 }
 #HeaderSectionMobile p{
     font-size:15px;
-    color:#777;
+    color:#fff;
     line-height:22px;
     text-align:left
 }
@@ -2354,7 +2354,7 @@ a.download,a.download:hover{
     right:0
 }
 .MainNavigationMobile{
-    background:#000;
+    background:#2e4647;
     overflow-y:scroll!important;
     -webkit-overflow-scrolling:touch;
     float:left;
@@ -2390,7 +2390,7 @@ a.download,a.download:hover{
     position:absolute;
     display:block;
     overflow:hidden;
-    background:#000;
+    background:#2e4647;
     z-index:99;
     width:100%
 }
@@ -2412,7 +2412,7 @@ a.download,a.download:hover{
     text-align:left;
     color:#fff;
     text-transform:uppercase;
-    font-size:16px
+    font-size:14px !important;
 }
 .MainNavigationMobile .navbar-nav>li>a .glyphicon-minus,.MainNavigationMobile .navbar-nav>li>a .glyphicon-plus{
     font-size:14px
@@ -2438,7 +2438,7 @@ a.download,a.download:hover{
     width:100%;
     border:none;
     border-bottom:1px solid #ccc;
-    background:#272727!important;
+    background:#2e4647!important;
     font-size:16px
 }
 .MainNavigationMobile .dropdown-menu .container{
@@ -2463,7 +2463,7 @@ a.download,a.download:hover{
     text-align:left;
     padding:0 15px 0 0;
     margin:5px 0 0;
-    font-size:16px;
+    font-size:15px !important;
     line-height:22px;
     font-weight:400
 }
